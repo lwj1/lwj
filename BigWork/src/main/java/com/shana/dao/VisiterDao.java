@@ -7,4 +7,5 @@ import com.shana.model.Visiter;
  */
 public interface VisiterDao {
     Visiter addVisiter(Visiter visiter);
+    Visiter
 }

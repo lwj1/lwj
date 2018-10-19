@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class Resume {
     private int id;
+    private int vid;
     private String name;
     private String sex;
     private int age;
@@ -15,8 +16,151 @@ public class Resume {
     private int phone;
     private String email;
     private  int marrige;
-    private String GraduateSchool;
+    private String education;
+    private String graduateSchool;
     private String major;
+    private String selfassessment;
+    private String experience;
+    private int salaryExpectation;
+    private String jobDesire;
 
 
+    public Resume() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getVid() {
+        return vid;
+    }
+
+    public void setVid(int vid) {
+        this.vid = vid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getNation() {
+        return nation;
+    }
+
+    public void setNation(String nation) {
+        this.nation = nation;
+    }
+
+    public Date getBirth() {
+        return birth;
+    }
+
+    public void setBirth(Date birth) {
+        this.birth = birth;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getMarrige() {
+        return marrige;
+    }
+
+    public void setMarrige(int marrige) {
+        this.marrige = marrige;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public String getGraduateSchool() {
+        return graduateSchool;
+    }
+
+    public void setGraduateSchool(String graduateSchool) {
+        this.graduateSchool = graduateSchool;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getSelfassessment() {
+        return selfassessment;
+    }
+
+    public void setSelfassessment(String selfassessment) {
+        this.selfassessment = selfassessment;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
+    public int getSalaryExpectation() {
+        return salaryExpectation;
+    }
+
+    public void setSalaryExpectation(int salaryExpectation) {
+        this.salaryExpectation = salaryExpectation;
+    }
+
+    public String getJobDesire() {
+        return jobDesire;
+    }
+
+    public void setJobDesire(String jobDesire) {
+        this.jobDesire = jobDesire;
+    }
 }
