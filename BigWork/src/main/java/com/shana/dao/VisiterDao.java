@@ -6,6 +6,8 @@ import com.shana.model.Visiter;
  * Created by Administrator on 2018/10/19.
  */
 public interface VisiterDao {
-    Visiter addVisiter(Visiter visiter);
-    Visiter
+    int addVisiter(Visiter visiter);
+    Visiter findByNameAndPass(Visiter visiter);
+    Visiter findByName(Visiter visiter);
+
 }

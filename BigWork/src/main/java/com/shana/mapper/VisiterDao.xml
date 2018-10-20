@@ -4,5 +4,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.shana.dao.VisiterDao">
 
-    <insert id="addVisiter"></insert>
+    <insert id="addVisiter">
+        INSERT INTO VISITER VALUES (VIS_SEQ.nextval,#{name},#{pass},0)
+    </insert>
+    <select id="findByNameAndPass" resultMap="U">
+        SELECT * FROM VISITER WHERE VIS_NAME=#{name} and VIS_PASS=#{pass}
+    </select>
+    <select id="findByName" resultMap="U">
+        SELECT * FROM VISITER WHERE VIS_NAME=#{name}
+    </select>
+    <resultMap id="U" type="com.shana.model.Visiter">
+        <id property="id" column="VIS_ID"></id>
+        <result property="name" column="VIS_NAME"></result>
+        <result property="pass" column="VIS_PASS"></result>
+        <result property="interview" column="VIS_INTERVIEW"></result>
+    </resultMap>
 </mapper>

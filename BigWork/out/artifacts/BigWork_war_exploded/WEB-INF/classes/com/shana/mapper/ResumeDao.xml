@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.ResumeDao">
+    <insert id="addResume">
+        INSERT into RESUME VALUES (RES_SEQ.nextval,#{vid},#{name},#{sex},#{age},#{nation},#{birth},#{phone},#{email},#{marrige},
+        #{education},#{graduateSchool},#{major},#{selfassessment},#{experience},#{salaryExpectation},#{jobDesire})
+    </insert>
+    <update id="UpdateResumeByVid">
+    UPDATE RESUME
+        <set>
+            <if test="name!=null">
+                RES_NAME=#{name},
+            </if>
+            <if test="vid!=null">
+                RES_VID=#{vid},
+            </if>
+            <if test="sex!=null">
+                RES_SEX=#{sex},
+            </if>
+            <if test="age!=null">
+                RES_AGE=#{age},
+            </if>
+            <if test="nation!=null">
+                RES_NATION=#{nation},
+            </if>
+            <if test="birth!=null">
+                RES_BIRTH=#{birth},
+            </if>
+            <if test="phone!=null">
+                RES_PHONE=#{phone},
+            </if>
+            <if test="email!=null">
+                RES_EMAIL=#{email},
+            </if>
+            <if test="marrige!=null">
+                RES_MARRIGE=#{marrige},
+            </if>
+            <if test="education!=null">
+                RES_EDUCATION=#{education},
+            </if>
+            <if test="graduateSchool!=null">
+                RES_GRADUATESCHOOL=#{graduateSchool},
+            </if>
+            <if test="major!=null">
+                RES_MAJOR=#{major},
+            </if>
+            <if test="selfassessment!=null">
+                RES_SELFASSESSMENT=#{selfassessment},
+            </if>
+            <if test="experience!=null">
+                RES_EXPERIENCE=#{experience},
+            </if>
+            <if test="salaryExpectation!=null">
+                RES_SALARYEXPECTATION=#{salaryExpectation},
+            </if>
+            <if test="jobDesire!=null">
+                RES_JOBDESIRE=#{jobDesire}
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                RES_VID=#{vid}
+            </if>
+        </where>
+    </update>
+    <delete id="deleteResumeByVid">
+        DELETE FROM  RESUME WHERE RES_VID=#{vid}
+    </delete>
+
+    <select id="findResumeByVid" resultMap="R">
+        SELECT * FROM RESUME WHERE RES_VID=#{vid}
+    </select>
+    <resultMap id="R" type="com.shana.model.Resume">
+        <id property="id" column="RES_ID"></id>
+        <result property="name" column="RES_NAME"></result>
+        <result property="vid" column="RES_VID"></result>
+        <result property="sex" column="RES_SEX"></result>
+        <result property="age" column="RES_AGE"></result>
+        <result property="nation" column="RES_NATION"></result>
+        <result property="birth" column="RES_BIRTH"></result>
+        <result property="phone" column="RES_PHONE"></result>
+        <result property="email" column="RES_EMAIL"></result>
+        <result property="major" column="RES_MAJOR"></result>
+        <result property="marrige" column="RES_MARRIGE"></result>
+        <result property="education" column="RES_EDUCATION"></result>
+        <result property="salaryExpectation" column="RES_SALARYEXPECTATION"></result>
+        <result property="jobDesire" column="RES_JOBDESIRE"></result>
+        <result property="graduateSchool" column="RES_GRADUATESCHOOL"></result>
+        <result property="selfassessment" column="RES_SELFASSESSMENT"></result>
+        <result property="experience" column="RES_EXPERIENCE"></result>
+    </resultMap>
+</mapper>

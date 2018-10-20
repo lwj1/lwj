@@ -12,10 +12,10 @@ public class Resume {
     private String sex;
     private int age;
     private String nation;
-    private Date birth;
+    private String birth;
     private int phone;
     private String email;
-    private  int marrige;
+    private String marrige;
     private String education;
     private String graduateSchool;
     private String major;
@@ -30,6 +30,29 @@ public class Resume {
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Resume{" +
+                "id=" + id +
+                ", vid=" + vid +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age=" + age +
+                ", nation='" + nation + '\'' +
+                ", birth=" + birth +
+                ", phone=" + phone +
+                ", email='" + email + '\'' +
+                ", marrige=" + marrige +
+                ", education='" + education + '\'' +
+                ", graduateSchool='" + graduateSchool + '\'' +
+                ", major='" + major + '\'' +
+                ", selfassessment='" + selfassessment + '\'' +
+                ", experience='" + experience + '\'' +
+                ", salaryExpectation=" + salaryExpectation +
+                ", jobDesire='" + jobDesire + '\'' +
+                '}';
     }
 
     public void setId(int id) {
@@ -76,11 +99,11 @@ public class Resume {
         this.nation = nation;
     }
 
-    public Date getBirth() {
+    public String getBirth() {
         return birth;
     }
 
-    public void setBirth(Date birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
 
@@ -100,11 +123,11 @@ public class Resume {
         this.email = email;
     }
 
-    public int getMarrige() {
+    public String getMarrige() {
         return marrige;
     }
 
-    public void setMarrige(int marrige) {
+    public void setMarrige(String marrige) {
         this.marrige = marrige;
     }
 

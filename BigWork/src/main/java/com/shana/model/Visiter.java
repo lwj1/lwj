@@ -14,6 +14,15 @@ public class Visiter implements Serializable{
     public Visiter() {
     }
 
+    public Visiter(String name) {
+        this.name = name;
+    }
+
+    public Visiter(String name, String pass) {
+        this.name = name;
+        this.pass = pass;
+    }
+
     public int getId() {
         return id;
     }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -13,30 +14,54 @@
 <html>
 <head>
     <base href="<%=basePath%>"/>
-    <title>market</title>
+    <title>ajin</title>
 </head>
 <style>
     ul{
         list-style-type: none;
     }
+    .a2{
+        width: 100px;
+        display: inline-block;;
+    }
+    .a4{
+        width: 150px;
+        display: inline-block;
+    }
+    .a1{
+        width:200px;
+    }
+    #a3{
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 420px;
+        height: 200px;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 </style>
 <body>
-<div >
-    <h3>阿进集团</h3>
-    <form action="loginJudge" method="get">
+<div id="a3">
+    <h3 style="text-align: center">陈俊集团</h3>
+    <form action="visitloginJudge" method="get">
         <ul>
-            <li>用户名:<input name="name"/></li><br/>
+            <li><span class="a2">用户名:</span><input name="name" class="a1"/></li><br>
 
-            <li>密码&nbsp&nbsp  :<input type="password" name="password"/></li><br/>
-            <li><input type="submit" value="登陆">&nbsp &nbsp&nbsp&nbsp&nbsp<a href="Register.jsp">注册</a></li>
-            <li><input type="checkbox" name="log">记住用户名密码</li>
-            <li><a href="AutoLoginCheck" name="log">自动登陆</a></li>
+            <li><span class="a2">密码:</span><input type="password" name="pass" class="a1"/></li><br>
+            <font color=red><c:out value="${msg}"></c:out> </font>
+            <li><input type="submit" value="登陆" width="300px">
+            <a href="register.jsp" ><span class="a4"></span><input type="button" value="注册" width="300px"></a></li>
         </ul>
     </form>
 </div>
+
 <h4 style="color: red">
 </h4>
 </body>
 
-    
+
 </html>

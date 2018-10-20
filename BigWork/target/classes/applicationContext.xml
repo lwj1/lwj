@@ -18,7 +18,7 @@
 
         <property name="mapperLocations" value="classpath:com/shana/mapper/*.xml"/>
 
-        <property name="typeAliasesPackage" value="com.shana.model"/>
+         <property name="typeAliasesPackage" value="com.shana.model"/>
     </bean>
 
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -35,7 +35,7 @@
     <tx:advice id="interceptor" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="get*" read-only="true"/>
-            <tx:method name="search*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
             <tx:method name="*"/>
         </tx:attributes>
     </tx:advice>
