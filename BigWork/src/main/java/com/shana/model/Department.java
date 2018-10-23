@@ -7,8 +7,6 @@ import java.io.Serializable;
  */
 public class Department implements Serializable{
     private int id;
-    private int empno;
-    private int posno;
     private String name;
     private String starttime;
 
@@ -18,22 +16,6 @@ public class Department implements Serializable{
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getEmpno() {
-        return empno;
-    }
-
-    public void setEmpno(int empno) {
-        this.empno = empno;
-    }
-
-    public int getPosno() {
-        return posno;
-    }
-
-    public void setPosno(int posno) {
-        this.posno = posno;
     }
 
     public String getName() {

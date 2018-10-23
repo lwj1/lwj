@@ -1,7 +1,9 @@
 package com.shana.controller;
 
+import com.shana.model.RecruitmentInfo;
 import com.shana.model.Resume;
 import com.shana.model.Visiter;
+import com.shana.service.RecruitmentInfoService;
 import com.shana.service.ResumeService;
 import com.shana.service.VisiterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/10/19.
@@ -24,6 +27,8 @@ public class VisiterController {
     @Autowired
     private VisiterService visiterService;
     @Autowired
+    private RecruitmentInfoService recruitmentInfoService;
+    @Autowired
     private ResumeService resumeService;
     @RequestMapping(value = "/visitloginJudge")
     public String visitloginJudge(@ModelAttribute("visiter") Visiter visiter, HttpServletRequest request,HttpSession session)throws Exception{
@@ -32,6 +37,8 @@ public class VisiterController {
             Resume resume=resumeService.findResumeByVid(visiter1.getId());
             session.setAttribute("resume",resume);
             session.setAttribute("visiter",visiter1);
+            List<RecruitmentInfo> recInfo=recruitmentInfoService.getAllRecruitmentInfo();
+            session.setAttribute("recInfo",recInfo);
             return "../../visitLogin";
         }else {
             request.setAttribute("msg","用户名或密码错误");

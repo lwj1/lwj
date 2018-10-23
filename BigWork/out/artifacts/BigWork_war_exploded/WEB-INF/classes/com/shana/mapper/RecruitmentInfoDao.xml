@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.RecruitmentInfoDao">
+    <insert id="addRecruitmentInfo">
+        INSERT INTO RECRUITMENTINFO VALUES (RECINFO_SEQ.nextval,)
+    </insert>
+    <update id="updateRecruitment">
+        UPDATE RECRUITMENTINFO
+        <set>
+            <if test="posName!=null">
+                RECINFO_POSNAME=#{posName},
+            </if>
+            <if test="jobAddress!=null">
+                RECINFO_JOBADDRESS=#{jobAddress},
+            </if>
+            <if test="educationRequire!=null">
+                RECINFO_EDUCATIONREQUIRE=#{educationRequire},
+            </if>
+            <if test="sexRequire!=null">
+                RECINFO_SEXREQUIRE=#{sexRequire},
+            </if>
+            <if test="jobFunction!=null">
+                RECINFO_JOBFUNCTION=#{jobFunction},
+            </if>
+            <if test="number!=null">
+                RECINFO_NUMBER=#{number},
+            </if>
+            <if test="ageRequire!=null">
+                RECINFO_AGEREQUIRE=#{ageRequire}
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                RECINFO_ID=#{id}
+            </if>
+        </where>
+    </update>
+    <delete id="deleteRecruitmentInfo">
+        DELETE FROM RECRUITMENTINFO WHERE RECINFO_ID=#{id}
+    </delete>
+    <select id="getAllRecruitmentInfo" resultMap="RecInfo">
+        SELECT * FROM RECRUITMENTINFO
+    </select>
+    <resultMap id="RecInfo" type="com.shana.model.RecruitmentInfo">
+        <id property="id" column="RECINFO_ID"></id>
+        <result property="posName" column="RECINFO_POSNAME"></result>
+        <result property="jobAddress" column="RECINFO_JOBADDRESS"></result>
+        <result property="educationRequire" column="RECINFO_EDUCATIONREQUIRE"></result>
+        <result property="sexRequire" column="RECINFO_SEXREQUIRE"></result>
+        <result property="jobFunction" column="RECINFO_JOBFUNCTION"></result>
+        <result property="number" column="RECINFO_NUMBER"></result>
+        <result property="ageRequire" column="RECINFO_AGEREQUIRE"></result>
+        <result property="experienceRequire" column="RECINFO_EXPERIENCEREQUIRE"></result>
+    </resultMap>
+</mapper>

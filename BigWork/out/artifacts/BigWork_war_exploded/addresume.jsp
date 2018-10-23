@@ -75,8 +75,9 @@
         <td colspan="6"><input name="salaryExpectation" style="width: 610px"></td>
     </tr>
      <tr>
-         <td colspan="6" style="border-right-style: none"></td>
-         <td style="border-left-style: none"><input type="submit" type="number" value="提交" style="width: 150px"></td>
+         <td colspan="3" style="border-right-style: none"></td>
+         <td  colspan="3" style="border-left-style: none;border-right-style: none"><input type="submit" type="number" value="提交" style="width: 150px"></td>
+         <td style="border-left-style: none"><a href="visitLogin.jsp" ><input type="button"  value="返回主页" style="width: 150px" ></a></td>
      </tr>
     </table>
 </form>

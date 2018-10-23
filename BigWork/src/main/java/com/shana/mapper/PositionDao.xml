@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.PositionDao">
+    <insert id="addPosition">
+        INSERT INTO L_POSITION VALUES (POS_SEQ.nextval,#{DepNo},#{name})
+    </insert>
+    <update id="updatePosition">
+        UPDATE L_POSITION
+        <set>
+            <if test="DepNo!=null">
+                POS_DEPNO=#{DepNo},
+            </if>
+            <if test="name!=null">
+                POS_NAME=#{name},
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                POS_ID=#{id}
+            </if>
+        </where>
+    </update>
+    <delete id="deletaPosition">
+        DELETE FROM L_POSITION WHERE POS_ID=#{id}
+    </delete>
+    <select id="getAllPosition" resultMap="Pos">
+        SELECT * FROM L_POSITION
+    </select>
+    <select id="getPositionByName" resultMap="Pos">
+        SELECT * FROM L_POSITION WHERE POS_NAME=#{name}
+    </select>
+    <resultMap id="Pos" type="com.shana.model.Position">
+        <id property="id" column="POS_ID"></id>
+        <result property="DepNo" column="POS_DEP"></result>
+        <result property="name" column="POS_NAME"></result>
+    </resultMap>
+</mapper>
