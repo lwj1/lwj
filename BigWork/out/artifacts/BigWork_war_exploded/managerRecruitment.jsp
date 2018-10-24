@@ -88,7 +88,7 @@
 <body>
 <c:out value="${recruitmentjudge}"></c:out>
 <form id="form1" runat="server">
-    <c:if test="${not empty recruitment}">
+    <c:if test="${not empty allRecruitment}">
         <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
                cellspacing="0">
             <tr align="center">
@@ -105,7 +105,7 @@
 
                 </th>
             </tr>
-            <c:forEach items="${sessionScope.allrecruitment}" var="i">
+            <c:forEach items="${sessionScope.allRecruitment}" var="i">
                 <tr align="center">
 
                     <td>
@@ -119,7 +119,7 @@
                     </td>
              <td>
                  <c:if test="${empty i.interviewTime}">
-                 <a href="managerinvite.jsp.jsp?id=${i.id}">邀请面试</a>
+                 <a href="managerinvite?id=${i.id}">邀请面试</a>
                  </c:if>
                  <c:if test="${not empty i.interviewTime}">
                      已邀请面试

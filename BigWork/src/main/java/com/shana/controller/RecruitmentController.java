@@ -2,6 +2,7 @@ package com.shana.controller;
 
 import com.shana.model.Recruitment;
 import com.shana.model.Resume;
+import com.shana.model.Staff;
 import com.shana.model.Visiter;
 import com.shana.service.RecruitmentInfoService;
 import com.shana.service.RecruitmentService;
@@ -54,16 +55,17 @@ public class RecruitmentController {
         recruitmentService.updateComfirm(rec_id);
 
     }
-    @RequestMapping(value = "/managerlogint")
-    public String getallrecruitment(HttpSession session)throws Exception{
-       List<Recruitment>list=recruitmentService.getAll();
-       session.setAttribute("allrecruitment",list);
-       return "../../managerlogin.jsp";
+    @RequestMapping(value = "/getallrecruitment")
+    public String getallrecruitment(HttpSession session)throws Exception {
+        List<Recruitment> list = recruitmentService.getAll();
+        if (list == null || list.isEmpty()) {
+            session.setAttribute("recruitmentjudge", "暂无任何投递信息");
+            return "forward:/getrecruitment.jsp";
+        } else {
+            session.setAttribute("allRecruitment", list);
+            return "redirect:/managerRecruitment.jsp";
 
+        }
     }
-    @RequestMapping(value = "/invitevisiter")
-    public String invitevisiter(int id,HttpSession session)throws Exception{
 
-
-    }
 }

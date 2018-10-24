@@ -1,9 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 2018/10/24
-  Time: 15:56
+  Time: 17:23
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,10 +16,6 @@
     <title>Title</title>
 </head>
 <body>
-<select>
-    <c:forEach items="${allStaff}" var="i">
-        <option value ="${i.id}">${i.name2}</option>
-    </c:forEach>
-</select>
+<a href="getallrecruitment">查看所有投递</a>
 </body>
 </html>

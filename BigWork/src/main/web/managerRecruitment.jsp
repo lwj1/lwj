@@ -78,7 +78,6 @@
                     data:{res_id:$("#a1").val},
                     success:function (obj) {
                         alert("确认成功！")
-                        windows.location.reload();
                     }
                 })
             })
@@ -89,50 +88,48 @@
 <body>
 <c:out value="${recruitmentjudge}"></c:out>
 <form id="form1" runat="server">
-<c:if test="${not empty recruitment}">
-    <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
-           cellspacing="0">
-        <tr align="center">
-            <th>
-                职位名称
-            </th>
-            <th>
-                面试时间
-            </th>
-            <th>
-                面试官
-            </th>
-            <th>
+    <c:if test="${not empty allRecruitment}">
+        <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
+               cellspacing="0">
+            <tr align="center">
+                <th>
+                    职位名称
+                </th>
+                <th>
+                    简历
+                </th>
+                <th>
+                    状态
+                </th>
+                <th>
 
-            </th>
-        </tr>
-        <c:forEach items="${sessionScope.recruitment}" var="i">
-        <tr align="center">
+                </th>
+            </tr>
+            <c:forEach items="${sessionScope.allRecruitment}" var="i">
+                <tr align="center">
 
-            <td>
-                ${i.posname}
-            </td>
-            <td>
-                ${i.interviewTime}
-            </td>
-            <td>
-                ${i.staffName}
-            </td>
-            <c:if test="${not empty i.staffName}">
-            <td>
-                <c:if test="${i.comfirm==0}">
-                   <input type="button" value="确认面试" id="a1">
-                </c:if>
-                <c:if test="${i.comfirm==1}">
-                    已确认面试
-                </c:if>
-            </td>
-            </c:if>
-        </tr>
-        </c:forEach>
-    </table>
-</c:if>
-    <a href="visitLogin.jsp" >返回主页</a>
+                    <td>
+                            ${i.posname}
+                    </td>
+                    <td>
+                            ${i.resid}
+                    </td>
+                    <td>
+                            ${i.readState}
+                    </td>
+             <td>
+                 <c:if test="${empty i.interviewTime}">
+                 <a href="managerinvite?id=${i.id}">邀请面试</a>
+                 </c:if>
+                 <c:if test="${not empty i.interviewTime}">
+                     已邀请面试
+                 </c:if>
+
+             </td>
+                </tr>
+            </c:forEach>
+        </table>
+    </c:if>
 </form>
 
 </body>

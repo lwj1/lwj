@@ -11,6 +11,16 @@ public class Visiter implements Serializable{
     private String pass;
     private int interview;
 
+    @Override
+    public String toString() {
+        return "Visiter{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
+                ", interview=" + interview +
+                '}';
+    }
+
     public Visiter() {
     }
 
