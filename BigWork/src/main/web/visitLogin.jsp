@@ -55,7 +55,9 @@
                     <div class="clear"></div>
                     <div class="add"><span>工作地点</span>${i.jobAddress}</div>
                     <div class="clear"></div>
-                    <div class="end"><a href="addrecruitment?resid=${resume.id}&RecruitmentInfoNo=${i.id}">我要投递</a></div>
+                    <div class="end"><a href="addrecruitment?resid=${resume.id}&recruitmentInfoNo=${i.id}">我要投递</a></div>
+                    <div class="end"><font color=red><c:out value="${msg}"> </c:out> </font></div>
+
                 </table>
                 <div class="clear"></div>
                 <hr>

@@ -23,8 +23,12 @@ public class RecruitmentController {
     @Autowired
     private RecruitmentInfoService recruitmentInfoService;
     @RequestMapping(value = "/addrecruitment")
-    public String addrecruitment(Recruitment recruitment)throws Exception{
+    public String addrecruitment(Recruitment recruitment,HttpServletRequest request)throws Exception{
         System.out.println(recruitment);
+        if(recruitmentService.getByResidAndRecInfoNo(recruitment)){
+            request.setAttribute("msg","你已经投递过该简历了");
+            return "forward:/visitLogin.jsp";
+        }
         recruitmentService.addRecruitment(recruitment);
         return "../../visitLogin";
     }
@@ -48,6 +52,18 @@ public class RecruitmentController {
     @RequestMapping(value = "/comfirminterview")
     public void comfirminterview(int rec_id)throws Exception{
         recruitmentService.updateComfirm(rec_id);
+
+    }
+    @RequestMapping(value = "/managerlogint")
+    public String getallrecruitment(HttpSession session)throws Exception{
+       List<Recruitment>list=recruitmentService.getAll();
+       session.setAttribute("allrecruitment",list);
+       return "../../managerlogin.jsp";
+
+    }
+    @RequestMapping(value = "/invitevisiter")
+    public String invitevisiter(int id,HttpSession session)throws Exception{
+
 
     }
 }

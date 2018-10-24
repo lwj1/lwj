@@ -34,6 +34,7 @@
             text-shadow: #e6ecf3 1px 1px 0px;
             padding-left: 5px;
             padding-right: 5px;
+            width: 200px;
         }
         .t1 tr td
         {
@@ -45,6 +46,7 @@
             padding-left: 5px;
             padding-right: 5px;
             word-break: break-all;
+            width: 200px;
         }
         /* white-space:nowrap; text-overflow:ellipsis; */
         tr.alt td
@@ -84,9 +86,9 @@
 
 </head>
 <body>
-<c:out value="${sessionScope.recruitmentjudge}"></c:out>
+<c:out value="${recruitmentjudge}"></c:out>
 <form id="form1" runat="server">
-<c:if test="${not empty sessionScope.recruitment}">
+<c:if test="${not empty recruitment}">
     <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
            cellspacing="0">
         <tr align="center">
@@ -103,7 +105,7 @@
 
             </th>
         </tr>
-        <c:forEach var="{sessionScope.recruitment}" items="i">
+        <c:forEach items="${sessionScope.recruitment}" var="i">
         <tr align="center">
 
             <td>
@@ -117,10 +119,10 @@
             </td>
             <c:if test="${not empty i.staffName}">
             <td>
-                <c:if test="${i.comfire==0}">
-                <input type="button"value="确认面试" id="a1" value="${i.id}">
+                <c:if test="${i.comfirm==0}">
+                    <input type="button" value="确认面试">
                 </c:if>
-                <c:if test="${i.comfire==1}">
+                <c:if test="${i.comfirm==1}">
                     已确认面试
                 </c:if>
             </td>

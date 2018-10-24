@@ -16,5 +16,6 @@ public interface RecruitmentDao {
     int updateRecruitment(Recruitment recruitment);
     List<Recruitment> getByResid(int resid);
     int updateComfirm(int id);
+    Recruitment getByResidAndRecInfoNo(Recruitment recruitment);
 
 }

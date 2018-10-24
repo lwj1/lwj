@@ -42,7 +42,7 @@
         SELECT * FROM RECRUITMENTINFO
     </select>
     <select id="getByid" resultType="string">
-        SELECT POS_NAME FROM RECRUITMENTINFO WHERE RECINFO_ID=#{id}
+        SELECT RECINFO_POSNAME FROM RECRUITMENTINFO WHERE RECINFO_ID=#{id}
     </select>
     <resultMap id="RecInfo" type="com.shana.model.RecruitmentInfo">
         <id property="id" column="RECINFO_ID"></id>

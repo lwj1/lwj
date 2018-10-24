@@ -12,7 +12,7 @@ public class Recruitment {
     private int staffNo;
     private String posname;
     private String staffName;
-    private int comfire;
+    private int comfirm;
 
     public String getStaffName() {
         return staffName;
@@ -78,12 +78,12 @@ public class Recruitment {
         this.staffNo = staffNo;
     }
 
-    public int getComfire() {
-        return comfire;
+    public int getComfirm() {
+        return comfirm;
     }
 
-    public void setComfire(int comfire) {
-        this.comfire = comfire;
+    public void setComfirm(int comfirm) {
+        this.comfirm = comfirm;
     }
 
     @Override
@@ -97,7 +97,7 @@ public class Recruitment {
                 ", staffNo=" + staffNo +
                 ", posname='" + posname + '\'' +
                 ", staffName='" + staffName + '\'' +
-                ", comfire=" + comfire +
+                ", comfire=" + comfirm +
                 '}';
     }
 

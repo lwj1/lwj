@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="LWJ">
       <ObjectId>49</ObjectId>
-      <IntrospectionTimestamp>2018-10-24.11:06:40</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-10-24.13:33:48</IntrospectionTimestamp>
       <CreatedTimestamp>2018-10-19.12:39:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-24.11:06:39</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-24.13:33:47</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -115,7 +115,7 @@
     <table id="29" parent="2" name="RECRUITMENT">
       <ObjectId>20338</ObjectId>
       <CreatedTimestamp>2018-10-22.02:28:30</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-24.11:06:39</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-24.13:33:47</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="30" parent="2" name="RECRUITMENTINFO">
@@ -210,13 +210,13 @@
       <Position>2</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>NULL </DefaultExpression>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="45" parent="29" name="REC_RECINFONO">
       <Position>3</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>NULL </DefaultExpression>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="46" parent="29" name="REC_INTERVIEWTIME">
       <Position>4</Position>

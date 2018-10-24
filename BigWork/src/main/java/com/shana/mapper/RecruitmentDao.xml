@@ -2,13 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shana.dao.RecruitmentDao">
     <insert id="addRecruitment">
-        INSERT INTO RECRUITMENT VALUES (REC_SEQ.nextval,#{resid},#{recruitmentInfoNo},'',0,0,0);
+        INSERT INTO RECRUITMENT VALUES (REC_SEQ.nextval,#{resid},#{recruitmentInfoNo},'',0,0,0)
     </insert>
     <select id="getAll" resultMap="Rec">
         SELECT * FROM RECRUITMENT
     </select>
     <select id="getByResid" resultMap="Rec">
         SELECT * FROM RECRUITMENT WHERE REC_RID=#{resid}
+    </select>
+    <select id="getByResidAndRecInfoNo" resultMap="Rec">
+        SELECT * FROM RECRUITMENT WHERE REC_RID=#{resid} and REC_RECINFONO=#{recruitmentInfoNo}
     </select>
     <update id="readRecruitment">
         UPDATE RECRUITMENT SET REC_READSTATE=1 WHERE REC_ID=#{id}
@@ -35,10 +38,10 @@
     <resultMap id="Rec" type="com.shana.model.Recruitment">
         <id property="id" column="REC_ID"></id>
         <result property="resid" column="REC_RID"></result>
-        <result property="RecruitmentInfoNo" column="REC_RECINFONO"></result>
+        <result property="recruitmentInfoNo" column="REC_RECINFONO"></result>
         <result property="interviewTime" column="REC_INTERVIEWTIME"></result>
         <result property="readState" column="REC_READSTATE"></result>
         <result property="staffNo" column="REC_STAFFNO"></result>
-        <result property="comfire" column="REC_COMFIRM"></result>
+        <result property="comfirm" column="REC_COMFIRM"></result>
     </resultMap>
 </mapper>

@@ -14,4 +14,5 @@ public interface RecruitmentService {
     boolean updateRecruitment(Recruitment recruitment);
     List<Recruitment> getByResid(int resid);
     boolean updateComfirm(int id);
+    boolean getByResidAndRecInfoNo(Recruitment recruitment);
 }

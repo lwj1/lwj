@@ -57,4 +57,12 @@ public class RecruitmentServiceImpl implements RecruitmentService {
         }
 
     }
+
+    public boolean getByResidAndRecInfoNo(Recruitment recruitment) {
+        if(recruitmentDao.getByResidAndRecInfoNo(recruitment)!=null){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
