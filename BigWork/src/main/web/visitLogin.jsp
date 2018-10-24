@@ -25,6 +25,7 @@
 <c:if test="${not empty resume}">
     <div style="text-align: right"><a href="resumefind">查看或修改我的简历</a></div>
 </c:if>
+<div style="text-align: right"><a href="getrecruitmentbyresid">查看我的投递</a></div>
 <h3 style="text-align: center">欢迎来到陈俊汽车金融公司</h3>
 
 <div>
@@ -54,7 +55,7 @@
                     <div class="clear"></div>
                     <div class="add"><span>工作地点</span>${i.jobAddress}</div>
                     <div class="clear"></div>
-                    <div class="end"><a href="addrecruitment?rec_id=${resume.id}&recinfo_id=${i.id}">我要投递</a></div>
+                    <div class="end"><a href="addrecruitment?resid=${resume.id}&RecruitmentInfoNo=${i.id}">我要投递</a></div>
                 </table>
                 <div class="clear"></div>
                 <hr>

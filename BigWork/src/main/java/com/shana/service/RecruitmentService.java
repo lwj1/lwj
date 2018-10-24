@@ -12,4 +12,6 @@ public interface RecruitmentService {
     boolean readRecruitment(int id);
     List<Recruitment> getAll();
     boolean updateRecruitment(Recruitment recruitment);
+    List<Recruitment> getByResid(int resid);
+    boolean updateComfirm(int id);
 }

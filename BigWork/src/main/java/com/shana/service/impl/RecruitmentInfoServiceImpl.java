@@ -41,4 +41,8 @@ public class RecruitmentInfoServiceImpl implements RecruitmentInfoService{
         }else
             return false;
     }
+
+    public String getByid(int id) {
+        return recruitmentInfoDao.getByid(id);
+    }
 }

@@ -6,11 +6,29 @@ package com.shana.model;
 public class Recruitment {
     private int id;
     private int resid;
-    private int RecruitmentInfoNo;
+    private int recruitmentInfoNo;
     private String interviewTime;
     private int readState;
     private int staffNo;
+    private String posname;
+    private String staffName;
+    private int comfire;
 
+    public String getStaffName() {
+        return staffName;
+    }
+
+    public void setStaffName(String staffName) {
+        this.staffName = staffName;
+    }
+
+    public String getPosname() {
+        return posname;
+    }
+
+    public void setPosname(String posname) {
+        this.posname = posname;
+    }
 
     public int getId() {
         return id;
@@ -29,13 +47,12 @@ public class Recruitment {
     }
 
     public int getRecruitmentInfoNo() {
-        return RecruitmentInfoNo;
+        return recruitmentInfoNo;
     }
 
     public void setRecruitmentInfoNo(int recruitmentInfoNo) {
-        RecruitmentInfoNo = recruitmentInfoNo;
+        this.recruitmentInfoNo = recruitmentInfoNo;
     }
-
 
     public String getInterviewTime() {
         return interviewTime;
@@ -59,6 +76,29 @@ public class Recruitment {
 
     public void setStaffNo(int staffNo) {
         this.staffNo = staffNo;
+    }
+
+    public int getComfire() {
+        return comfire;
+    }
+
+    public void setComfire(int comfire) {
+        this.comfire = comfire;
+    }
+
+    @Override
+    public String toString() {
+        return "Recruitment{" +
+                "id=" + id +
+                ", resid=" + resid +
+                ", RecruitmentInfoNo=" + recruitmentInfoNo +
+                ", interviewTime='" + interviewTime + '\'' +
+                ", readState=" + readState +
+                ", staffNo=" + staffNo +
+                ", posname='" + posname + '\'' +
+                ", staffName='" + staffName + '\'' +
+                ", comfire=" + comfire +
+                '}';
     }
 
     public Recruitment() {

@@ -13,4 +13,5 @@ public interface RecruitmentInfoService {
     List<RecruitmentInfo> getAllRecruitmentInfo();
     boolean deleteRecruitmentInfo(int id);
     boolean updateRecruitment(com.shana.model.RecruitmentInfo recruitmentInfo);
+    String getByid(int id);
 }

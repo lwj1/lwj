@@ -1,9 +1,11 @@
 package com.shana.controller;
 
+import com.shana.model.Recruitment;
 import com.shana.model.RecruitmentInfo;
 import com.shana.model.Resume;
 import com.shana.model.Visiter;
 import com.shana.service.RecruitmentInfoService;
+import com.shana.service.RecruitmentService;
 import com.shana.service.ResumeService;
 import com.shana.service.VisiterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +32,8 @@ public class VisiterController {
     private RecruitmentInfoService recruitmentInfoService;
     @Autowired
     private ResumeService resumeService;
+    @Autowired
+    private RecruitmentService recruitmentService;
     @RequestMapping(value = "/visitloginJudge")
     public String visitloginJudge(@ModelAttribute("visiter") Visiter visiter, HttpServletRequest request,HttpSession session)throws Exception{
         Visiter visiter1=visiterService.findByNameAndPass(visiter);

@@ -44,4 +44,17 @@ public class RecruitmentServiceImpl implements RecruitmentService {
             return false;
         }
     }
+
+    public List<Recruitment> getByResid(int resid) {
+        return recruitmentDao.getByResid(resid);
+    }
+
+    public boolean updateComfirm(int id) {
+        if(recruitmentDao.updateComfirm(id)!=0){
+            return true;
+        }else {
+            return false;
+        }
+
+    }
 }

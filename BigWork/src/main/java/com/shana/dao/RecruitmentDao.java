@@ -14,5 +14,7 @@ public interface RecruitmentDao {
     int readRecruitment(int id);
     List<Recruitment> getAll();
     int updateRecruitment(Recruitment recruitment);
+    List<Recruitment> getByResid(int resid);
+    int updateComfirm(int id);
 
 }
