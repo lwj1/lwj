@@ -54,12 +54,25 @@
                     <div class="clear"></div>
                     <div class="add"><span>工作地点</span>${i.jobAddress}</div>
                     <div class="clear"></div>
-                    <div class="end"><a href="addrecruitment">我要投递</a></div>
+                    <div class="end"><a href="addrecruitment?rec_id=${resume.id}&">我要投递</a></div>
                 </table>
                 <div class="clear"></div>
                 <hr>
             </c:forEach>
         </div>
+    <div class="r">
+        <div></div>
+        <div class="info"><h3></h3></div>
+            <div class="info"><span>性质</span>民营</div>
+            <div class="info"><span>行业</span>金融</div>
+            <div class="info"><span>规模</span>100-199人</div>
+            <div class="info"><span>地区</span>上海</div>
+            <div class="info"><span>网址</span>www.xxxxx.com</div>
+        </div>
+
+
+
+    </div>
 
 
 
@@ -82,11 +95,12 @@
         padding-right: 15px;
     }
     .item {
-        width: 813px;
         padding-left: 40px;
         padding-top: 15px;
         padding-bottom: 15px;
         position: relative;
+        float: left;
+        width: 880px;
     }
     span{
         padding-right: 15px;
@@ -127,6 +141,10 @@
         font-size: 0px;
         line-height: 0px;
 
+    }
+     .r {
+        float: left;
+        width: 320px;
     }
 </style>
 </html>

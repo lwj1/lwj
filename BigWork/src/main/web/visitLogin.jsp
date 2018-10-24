@@ -54,28 +54,21 @@
                     <div class="clear"></div>
                     <div class="add"><span>工作地点</span>${i.jobAddress}</div>
                     <div class="clear"></div>
-                    <div class="end"><a href="addrecruitment">我要投递</a></div>
+                    <div class="end"><a href="addrecruitment?rec_id=${resume.id}&recinfo_id=${i.id}">我要投递</a></div>
                 </table>
                 <div class="clear"></div>
                 <hr>
             </c:forEach>
         </div>
     <div class="r">
-        <div class="cominfo link_gray6">
-            <div class="comlogo">
-                <a target="_blank" href="/company/23615.html">
-                    <img src="http://www.xshrcw.com/data/upload/company_logo/1807/24/7ed0db3282702c02c3584ca227520374.jpg">
-                </a>
-            </div>
-            <div class="comname">
-                <a class="line_substring" target="_blank" href="/company/23615.html" title="嘉兴市沃能亚蚂自动化科技有限公司">嘉兴市沃能亚蚂自动化科技有限公司</a>
-                <div class="clear"></div>
-            </div>
+        <div></div>
+        <div class="info"><h3></h3></div>
             <div class="info"><span>性质</span>民营</div>
-            <div class="info"><span>行业</span>电子/半导体/集成电路</div>
-            <div class="info"><span>规模</span>20-99人</div>
-            <div class="info"><span>地区</span>浙江/嘉兴</div>
-            <div class="info"><span>网址</span><a href="http://www.wn0573.com" target="_blank" title="www.wn0573.com">www.wn0573.com</a></div>	  	</div>
+            <div class="info"><span>行业</span>金融</div>
+            <div class="info"><span>规模</span>100-199人</div>
+            <div class="info"><span>地区</span>上海</div>
+            <div class="info"><span>网址</span>www.xxxxx.com</div>
+        </div>
 
 
 
@@ -102,11 +95,12 @@
         padding-right: 15px;
     }
     .item {
-        width: 813px;
         padding-left: 40px;
         padding-top: 15px;
         padding-bottom: 15px;
         position: relative;
+        float: left;
+        width: 880px;
     }
     span{
         padding-right: 15px;
@@ -147,6 +141,10 @@
         font-size: 0px;
         line-height: 0px;
 
+    }
+     .r {
+        float: left;
+        width: 320px;
     }
 </style>
 </html>

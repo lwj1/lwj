@@ -20,12 +20,20 @@ public class Recruitment {
         this.id = id;
     }
 
-    public int getRid() {
+    public int getResid() {
         return resid;
     }
 
-    public void setRid(int rid) {
-        this.resid = rid;
+    public void setResid(int resid) {
+        this.resid = resid;
+    }
+
+    public int getRecruitmentInfoNo() {
+        return RecruitmentInfoNo;
+    }
+
+    public void setRecruitmentInfoNo(int recruitmentInfoNo) {
+        RecruitmentInfoNo = recruitmentInfoNo;
     }
 
 
