@@ -10,4 +10,5 @@ import java.util.List;
 public interface StaffService {
     Boolean addStaff(Staff staff);
     List<Staff> getAll();
+    String getStaffNameById(int id);
 }

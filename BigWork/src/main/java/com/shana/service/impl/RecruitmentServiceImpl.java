@@ -65,4 +65,12 @@ public class RecruitmentServiceImpl implements RecruitmentService {
             return false;
         }
     }
+
+    public boolean updateemploy(int id) {
+        if(recruitmentDao.updateemploy(id)!=0){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

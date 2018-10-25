@@ -28,4 +28,8 @@ public class StaffServiceImpl implements StaffService{
     public List<Staff> getAll() {
         return staffDao.getAll();
     }
+
+    public String getStaffNameById(int id) {
+        return staffDao.getStaffNameById(id);
+    }
 }

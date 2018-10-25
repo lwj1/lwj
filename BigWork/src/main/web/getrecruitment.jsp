@@ -75,10 +75,11 @@
                 $.ajax({
                     type:"post",
                     url:"comfirminterview",
-                    data:{res_id:$("#a1").val},
+                    data:{res_id:$("#a2").val()},
                     success:function (obj) {
-                        alert("确认成功！")
-                        windows.location.reload();
+                        alert(obj);
+                        window.location.reload();
+
                     }
                 })
             })
@@ -121,7 +122,8 @@
             <c:if test="${not empty i.staffName}">
             <td>
                 <c:if test="${i.comfirm==0}">
-                   <input type="button" value="确认面试" id="a1">
+                    <input type="button" value="确认面试" id="a1">
+                    <input type="hidden" id="a2" value="${i.id}">
                 </c:if>
                 <c:if test="${i.comfirm==1}">
                     已确认面试

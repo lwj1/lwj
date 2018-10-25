@@ -81,7 +81,19 @@
                     }
                 })
             })
+            $("#b1").click(function () {
+                $.ajax({
+                    type:"post",
+                    url:"addStaff",
+                    data:{resumeid:$("#c3").val(),recinfoid:$("#c4").val()
+                        ,recruitmentid:$("#c5").val()},
+                    success:function (obj) {
+                        alert(obj)
+                    }
+                })
+            })
         })
+
     </script>
 
 </head>
@@ -104,15 +116,21 @@
                 <th>
 
                 </th>
+                <th>
+
+                </th>
             </tr>
             <c:forEach items="${sessionScope.allRecruitment}" var="i">
+                <input type="hidden" value="${i.resid}" id="c3">
+                <input type="hidden" value="${i.recruitmentInfoNo}" id="c4">
+                <input type="hidden" value="${i.id}" id="c5">
                 <tr align="center">
 
                     <td>
                             ${i.posname}
                     </td>
                     <td>
-                           <a href="getResumeById?id=${i.resid}">${i.resid}</a>
+                           <a href="getResumeById?id=${i.id}&recid=${i.resid}">${i.resid}</a>
                     </td>
                     <td>
                         <c:if test="${i.readState==0}">
@@ -129,7 +147,19 @@
                  <c:if test="${not empty i.interviewTime}">
                      已邀请面试
                  </c:if>
-
+                 <c:if test="${i.comfirm==0}">
+                     用户还未确认
+                 </c:if>
+                     </td>
+                 <c:if test="${i.comfirm==1}">
+                    <td>
+                        <c:if test="${i.employ==0}">
+                    <input type="button" value="录用" id="b1">
+                     </c:if>
+                     <c:if test="${i.employ==1}">
+                         已录用
+                     </c:if>
+                 </c:if>
              </td>
                 </tr>
             </c:forEach>

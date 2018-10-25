@@ -13,6 +13,9 @@
     <select id="findByName" resultMap="U">
         SELECT * FROM VISITER WHERE VIS_NAME=#{name}
     </select>
+    <select id="getVisiterById" resultMap="U">
+        SELECT * FROM VISITER WHERE VIS_ID=#{id}
+    </select>
     <resultMap id="U" type="com.shana.model.Visiter">
         <id property="id" column="VIS_ID"></id>
         <result property="name" column="VIS_NAME"></result>

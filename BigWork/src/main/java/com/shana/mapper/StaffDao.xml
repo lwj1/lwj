@@ -2,11 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shana.dao.StaffDao">
     <insert id="addStaff">
-        INSERT INTO STAFF VALUES (#{id},#{depId},#{posId},#{name},#{pass},#{name2},
+        INSERT INTO STAFF VALUES (STA_SEQ.nextval,#{depId},#{posId},#{name},#{pass},#{name2},
         #{sex},#{age},#{phone},#{email},#{salary})
     </insert>
     <select id="getAll" resultMap="Sta">
         SELECT * FROM STAFF
+    </select>
+    <select id="getStaffNameById" resultType="java.lang.String">
+        SELECT STA_NAME2 FROM STAFF WHERE STA_ID=#{id}
     </select>
     <resultMap id="Sta" type="com.shana.model.Staff">
         <id property="id" column="STA_ID"></id>

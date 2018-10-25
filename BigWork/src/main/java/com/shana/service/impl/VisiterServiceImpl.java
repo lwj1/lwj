@@ -26,4 +26,8 @@ private VisiterDao visiterDao;
     public Visiter findByName(Visiter visiter) {
         return visiterDao.findByName(visiter);
     }
+
+    public Visiter getVisiterById(int id) {
+        return visiterDao.getVisiterById(id);
+    }
 }

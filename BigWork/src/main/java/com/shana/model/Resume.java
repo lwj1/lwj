@@ -1,11 +1,12 @@
 package com.shana.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Administrator on 2018/10/19.
  */
-public class Resume {
+public class Resume implements Serializable{
     private int id;
     private int vid;
     private String name;

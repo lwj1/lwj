@@ -9,5 +9,6 @@ public interface VisiterDao {
     int addVisiter(Visiter visiter);
     Visiter findByNameAndPass(Visiter visiter);
     Visiter findByName(Visiter visiter);
+    Visiter getVisiterById(int id);
 
 }

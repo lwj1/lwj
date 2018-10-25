@@ -1,9 +1,11 @@
 package com.shana.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2018/10/22.
  */
-public class Recruitment {
+public class Recruitment implements Serializable{
     private int id;
     private int resid;
     private int recruitmentInfoNo;
@@ -13,22 +15,7 @@ public class Recruitment {
     private String posname;
     private String staffName;
     private int comfirm;
-
-    public String getStaffName() {
-        return staffName;
-    }
-
-    public void setStaffName(String staffName) {
-        this.staffName = staffName;
-    }
-
-    public String getPosname() {
-        return posname;
-    }
-
-    public void setPosname(String posname) {
-        this.posname = posname;
-    }
+    private int employ;
 
     public int getId() {
         return id;
@@ -78,6 +65,22 @@ public class Recruitment {
         this.staffNo = staffNo;
     }
 
+    public String getPosname() {
+        return posname;
+    }
+
+    public void setPosname(String posname) {
+        this.posname = posname;
+    }
+
+    public String getStaffName() {
+        return staffName;
+    }
+
+    public void setStaffName(String staffName) {
+        this.staffName = staffName;
+    }
+
     public int getComfirm() {
         return comfirm;
     }
@@ -86,18 +89,27 @@ public class Recruitment {
         this.comfirm = comfirm;
     }
 
+    public int getEmploy() {
+        return employ;
+    }
+
+    public void setEmploy(int employ) {
+        this.employ = employ;
+    }
+
     @Override
     public String toString() {
         return "Recruitment{" +
                 "id=" + id +
                 ", resid=" + resid +
-                ", RecruitmentInfoNo=" + recruitmentInfoNo +
+                ", recruitmentInfoNo=" + recruitmentInfoNo +
                 ", interviewTime='" + interviewTime + '\'' +
                 ", readState=" + readState +
                 ", staffNo=" + staffNo +
                 ", posname='" + posname + '\'' +
                 ", staffName='" + staffName + '\'' +
-                ", comfire=" + comfirm +
+                ", comfirm=" + comfirm +
+                ", employ=" + employ +
                 '}';
     }
 

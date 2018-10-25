@@ -1,9 +1,11 @@
 package com.shana.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2018/10/23.
  */
-public class Position {
+public class Position implements Serializable{
     private int id;
     private int DepNo;
     private String name;

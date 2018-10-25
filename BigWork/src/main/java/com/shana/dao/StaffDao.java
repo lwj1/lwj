@@ -10,4 +10,6 @@ import java.util.List;
 public interface StaffDao {
     int addStaff(Staff staff);
     List<Staff> getAll();
+    String getStaffNameById(int id);
+
 }

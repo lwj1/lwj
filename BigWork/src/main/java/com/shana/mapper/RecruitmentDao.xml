@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shana.dao.RecruitmentDao">
     <insert id="addRecruitment">
-        INSERT INTO RECRUITMENT VALUES (REC_SEQ.nextval,#{resid},#{recruitmentInfoNo},'',0,0,0)
+        INSERT INTO RECRUITMENT VALUES (REC_SEQ.nextval,#{resid},#{recruitmentInfoNo},'',0,0,0,0)
     </insert>
     <select id="getAll" resultMap="Rec">
         SELECT * FROM RECRUITMENT
@@ -35,6 +35,9 @@
     <update id="updateComfirm">
         UPDATE RECRUITMENT set REC_COMFIRM=1 WHERE REC_ID=#{id}
     </update>
+    <update id="updateemploy">
+        UPDATE RECRUITMENT set REC_EMPLOY=1 WHERE REC_ID=#{id}
+    </update>
     <resultMap id="Rec" type="com.shana.model.Recruitment">
         <id property="id" column="REC_ID"></id>
         <result property="resid" column="REC_RID"></result>
@@ -43,5 +46,6 @@
         <result property="readState" column="REC_READSTATE"></result>
         <result property="staffNo" column="REC_STAFFNO"></result>
         <result property="comfirm" column="REC_COMFIRM"></result>
+        <result property="employ" column="REC_EMPLOY"></result>
     </resultMap>
 </mapper>

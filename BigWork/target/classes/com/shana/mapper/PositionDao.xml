@@ -31,7 +31,7 @@
     </select>
     <resultMap id="Pos" type="com.shana.model.Position">
         <id property="id" column="POS_ID"></id>
-        <result property="DepNo" column="POS_DEP"></result>
+        <result property="DepNo" column="POS_DEPNO"></result>
         <result property="name" column="POS_NAME"></result>
     </resultMap>
 </mapper>
