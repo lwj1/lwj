@@ -11,4 +11,5 @@ public interface ResumeService {
     Resume findResumeByVid(int vid);
     boolean UpdateResumeByVid(Resume resume);
     boolean deleteResumeByVid(int vid);
+    Resume findResumeById(int id);
 }

@@ -19,7 +19,7 @@
 <body>
 <select>
     <c:forEach items="${allStaff}" var="i">
-        <option value ="${i.id}">${i.name2}</option>
+        <option value ="${i.id}"><span>${i.name2}</span></option>
     </c:forEach>
 </select>
 </body>

@@ -62,6 +62,10 @@ public class RecruitmentController {
             session.setAttribute("recruitmentjudge", "暂无任何投递信息");
             return "forward:/getrecruitment.jsp";
         } else {
+            for(int i=0;i<list.size();i++){
+                list.get(i).setPosname(recruitmentInfoService.getByid(list.get(i).getRecruitmentInfoNo()));
+            }
+            session.setAttribute("recruitment",list);
             session.setAttribute("allRecruitment", list);
             return "redirect:/managerRecruitment.jsp";
 

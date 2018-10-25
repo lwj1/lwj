@@ -40,4 +40,8 @@ public class ResumeServiceImpl implements ResumeService {
             return false;
         }
     }
+
+    public Resume findResumeById(int id) {
+        return resumeDao.findResumeById(id);
+    }
 }

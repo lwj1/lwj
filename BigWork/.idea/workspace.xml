@@ -2,42 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a331c84-53c1-4c9c-b234-6b1daa442b10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/StaffController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/dao/StaffDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/StaffService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/impl/StaffServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/RecruitmentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/StaffController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/VisiterController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/dao/StaffDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/service/StaffService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/service/impl/StaffServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/mapper/StaffDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerinvite.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shana/dao/StaffDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shana/mapper/StaffDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shana/service/StaffService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/web/managerRecruitment.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/web/managerindex.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/shana/mapper/StaffDao.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerlogin.jsp" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managergetresume.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/web/managergetresume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/RecruitmentController.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/RecruitmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/ResumeController.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/ResumeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/StaffController.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/StaffController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/VisiterController.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/controller/VisiterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/dao/ResumeDao.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/dao/ResumeDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/model/Staff.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/model/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/model/Visiter.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/model/Visiter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/ResumeService.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/ResumeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/impl/ResumeServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/impl/ResumeServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/impl/StaffServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/service/impl/StaffServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/controller/RecruitmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/RecruitmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/controller/ResumeController.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/ResumeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/controller/StaffController.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/StaffController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/controller/VisiterController.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/controller/VisiterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/dao/ResumeDao.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/dao/ResumeDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/model/Staff.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/model/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/model/Visiter.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/model/Visiter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/54d6821e-97cb-40dc-a080-8dc9f7c9991a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/54d6821e-97cb-40dc-a080-8dc9f7c9991a.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/service/ResumeService.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/service/ResumeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/service/impl/ResumeServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/service/impl/ResumeServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/service/impl/StaffServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shana/service/impl/StaffServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/getrecruitment.jsp" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/getrecruitment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/visitLogin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/visitLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/mapper/ResumeDao.xml" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/WEB-INF/classes/com/shana/mapper/ResumeDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerRecruitment.jsp" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerRecruitment.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerinvite.jsp" afterPath="$PROJECT_DIR$/out/artifacts/BigWork_war_exploded/managerinvite.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/dao/ResumeDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/dao/ResumeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/model/Visiter.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/model/Visiter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/managerRecruitment.jsp" afterPath="$PROJECT_DIR$/src/main/web/managerRecruitment.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/managerinvite.jsp" afterPath="$PROJECT_DIR$/src/main/web/managerinvite.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shana/mapper/ResumeDao.xml" afterPath="$PROJECT_DIR$/target/classes/com/shana/mapper/ResumeDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -127,12 +128,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VisiterController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java">
+      <file leaf-file-name="StaffDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/StaffDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-372">
-              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="114">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <marker date="1540372122351" expanded="true" signature="228:354" ph="INSERT INTO STAFF... " />
+                <marker date="1540372122351" expanded="true" signature="418:437" ph="SELECT * FRO... STAFF" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,18 +144,8 @@
       <file leaf-file-name="managerRecruitment.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/managerRecruitment.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-418">
-              <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResumeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="58" column="60" lean-forward="false" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+            <state relative-caret-position="152">
+              <caret line="111" column="40" lean-forward="true" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -160,70 +154,104 @@
       <file leaf-file-name="managerindex.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/managerindex.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="266">
               <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecruitmentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java">
+      <file leaf-file-name="VisiterDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/VisiterDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="190">
+              <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+              <folding>
+                <marker date="1539936701345" expanded="true" signature="247:309" ph="INSERT INTO VISITER... " />
+                <marker date="1539936701345" expanded="true" signature="382:447" ph="SELECT * FRO... VISITER" />
+                <marker date="1539936701345" expanded="true" signature="513:557" ph="SELECT * FRO... VISITER" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managerinvite.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Staff.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-386">
+              <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+              <folding>
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managerinvite.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/web/managerinvite.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="141">
+              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResumeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java">
+      <file leaf-file-name="managergetresume.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/managergetresume.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="298">
+              <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visitersuccess.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/visitersuccess.jsp">
+      <file leaf-file-name="StaffService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/StaffService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecruitmentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/RecruitmentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaffServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResumeDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+              <folding>
+                <marker date="1540431520807" expanded="true" signature="230:465" ph="INSERT into RESUME... " />
+                <marker date="1540431520807" expanded="true" signature="520:533" ph="UPDATE RESUM... " />
+                <marker date="1540431520807" expanded="true" signature="2292:2332" ph="DELETE FROM " />
+                <marker date="1540431520807" expanded="true" signature="2404:2445" ph="SELECT * FRO... RESUME" />
+                <marker date="1540431520807" expanded="true" signature="2515:2554" ph="SELECT * FRO... RESUME" />
               </folding>
             </state>
           </provider>
@@ -254,12 +282,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/ResumeSevvice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/model/Resume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml" />
         <option value="$PROJECT_DIR$/src/main/web/updateresume.jsp" />
         <option value="$PROJECT_DIR$/src/main/web/addresume.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/dao/DepartmentDap.java" />
@@ -291,20 +313,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shana/mapper/RecruitmentDao.xml" />
         <option value="$PROJECT_DIR$/src/main/web/visitLogin.jsp" />
         <option value="$PROJECT_DIR$/src/main/web/getrecruitment.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java" />
         <option value="$PROJECT_DIR$/src/main/web/managerlogin.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/54d6821e-97cb-40dc-a080-8dc9f7c9991a/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/dao/StaffDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/mapper/StaffDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/service/StaffService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/web/managerinvite.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/model/Visiter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java" />
         <option value="$PROJECT_DIR$/src/main/web/managerindex.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/managerRecruitment.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/dao/ResumeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/web/managerRecruitment.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/web/managergetresume.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/54d6821e-97cb-40dc-a080-8dc9f7c9991a/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java" />
+        <option value="$PROJECT_DIR$/src/main/web/managerinvite.jsp" />
       </list>
     </option>
   </component>
@@ -627,12 +655,13 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\gitprojects\demo1\BigWork\src\main\resources" />
-      <recent name="E:\gitprojects\demo1\BigWork\src\main\java\com\shana\mapper" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\gitprojects\demo1\BigWork\src\main\web\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gitprojects\demo1\BigWork\src\main\web" />
+      <recent name="E:\gitprojects\demo1\BigWork\src\main\resources" />
+      <recent name="E:\gitprojects\demo1\BigWork\src\main\java\com\shana\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1146,11 +1175,12 @@
       <workItem from="1540364104015" duration="35000" />
       <workItem from="1540364670057" duration="68000" />
       <workItem from="1540364805204" duration="9359000" />
+      <workItem from="1540429960043" duration="2777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105541000" />
+    <option name="totallyTimeSpent" value="108318000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1163,6 +1193,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1381" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1184,13 +1215,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21931261" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35679215" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35679215" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33060557" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23996972" sideWeight="0.4902439" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375473" sideWeight="0.4902439" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21331316" sideWeight="0.5097561" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1198,6 +1228,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1217,44 +1248,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.VISITER">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/model/RecruitmentInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/RecruitmentInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.RESUME">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1273,13 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/PositionDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1317,27 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <marker date="1540024151927" expanded="true" signature="230:465" ph="INSERT into RESUME... " />
-            <marker date="1540024151927" expanded="true" signature="520:533" ph="UPDATE RESUM... " />
-            <marker date="1540024151927" expanded="true" signature="2292:2332" ph="DELETE FROM " />
-            <marker date="1540024151927" expanded="true" signature="2404:2445" ph="SELECT * FRO... RESUME" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1354,19 +1319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/VisiterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/DepartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,23 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/RecruitmentDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="13" column="94" lean-forward="false" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-          <folding>
-            <marker date="1540365577076" expanded="true" signature="240:327" ph="INSERT INTO RECRUITMENT... " />
-            <marker date="1540365577076" expanded="true" signature="391:416" ph="SELECT * FRO... RECRUITMENT" />
-            <marker date="1540365577076" expanded="true" signature="484:532" ph="SELECT * FRO... RECRUITMENT" />
-            <marker date="1540365577076" expanded="true" signature="612:699" ph="SELECT * FRO... RECRUITMENT" />
-            <marker date="1540365577076" expanded="true" signature="756:813" ph="UPDATE RECRU... " />
-            <marker date="1540365577076" expanded="true" signature="872:890" ph="UPDATE RECRU... " />
-            <marker date="1540365577076" expanded="true" signature="1296:1351" ph="UPDATE RECRU... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1429,19 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1112">
           <caret line="99" column="40" lean-forward="true" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.RECRUITMENT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1470,14 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.L_POSITION">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1487,36 +1405,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/54d6821e-97cb-40dc-a080-8dc9f7c9991a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.STAFF">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/dao/ResumeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1530,51 +1418,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/StaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/model/Visiter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/StaffDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <marker date="1540372122351" expanded="true" signature="228:354" ph="INSERT INTO STAFF... " />
-            <marker date="1540372122351" expanded="true" signature="418:437" ph="SELECT * FRO... STAFF" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/updateresume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="78" column="86" lean-forward="false" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="86" />
           <folding />
         </state>
       </provider>
@@ -1595,84 +1442,294 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/RecruitmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#947#948#0" expanded="false" />
+            <element signature="e#1211#1212#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.RECRUITMENT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/PositionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <marker date="1540259086220" expanded="true" signature="234:298" ph="INSERT INTO L_POSITION... " />
+            <marker date="1540259086220" expanded="true" signature="746:787" ph="DELETE FROM " />
+            <marker date="1540259086220" expanded="true" signature="859:883" ph="SELECT * FRO... L_POSITION" />
+            <marker date="1540259086220" expanded="true" signature="958:1005" ph="SELECT * FRO... L_POSITION" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/VisiterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/VisiterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/visitersuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="413">
           <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/RecruitmentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/web/updateresume.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/dao/ResumeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/ResumeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/ResumeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="58" column="60" lean-forward="false" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/managerindex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/managerRecruitment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/managerinvite.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/RecruitmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="779">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.RESUME">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/RecruitmentDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="94" lean-forward="false" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
+          <folding>
+            <marker date="1540365577076" expanded="true" signature="240:327" ph="INSERT INTO RECRUITMENT... " />
+            <marker date="1540365577076" expanded="true" signature="391:416" ph="SELECT * FRO... RECRUITMENT" />
+            <marker date="1540365577076" expanded="true" signature="484:532" ph="SELECT * FRO... RECRUITMENT" />
+            <marker date="1540365577076" expanded="true" signature="612:699" ph="SELECT * FRO... RECRUITMENT" />
+            <marker date="1540365577076" expanded="true" signature="756:813" ph="UPDATE RECRU... " />
+            <marker date="1540365577076" expanded="true" signature="872:890" ph="UPDATE RECRU... " />
+            <marker date="1540365577076" expanded="true" signature="1296:1351" ph="UPDATE RECRU... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/VisiterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="8">
+          <caret line="37" column="142" lean-forward="false" selection-start-line="37" selection-start-column="142" selection-end-line="37" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/ResumeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/de2dfecc/54d6821e-97cb-40dc-a080-8dc9f7c9991a/LWJ.STAFF">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/controller/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/54d6821e-97cb-40dc-a080-8dc9f7c9991a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/StaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/model/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-386">
+          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/ResumeDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <folding>
+            <marker date="1540431520807" expanded="true" signature="230:465" ph="INSERT into RESUME... " />
+            <marker date="1540431520807" expanded="true" signature="520:533" ph="UPDATE RESUM... " />
+            <marker date="1540431520807" expanded="true" signature="2292:2332" ph="DELETE FROM " />
+            <marker date="1540431520807" expanded="true" signature="2404:2445" ph="SELECT * FRO... RESUME" />
+            <marker date="1540431520807" expanded="true" signature="2515:2554" ph="SELECT * FRO... RESUME" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/StaffDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <marker date="1540372122351" expanded="true" signature="228:354" ph="INSERT INTO STAFF... " />
+            <marker date="1540372122351" expanded="true" signature="418:437" ph="SELECT * FRO... STAFF" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shana/mapper/VisiterDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+          <folding>
+            <marker date="1539936701345" expanded="true" signature="247:309" ph="INSERT INTO VISITER... " />
+            <marker date="1539936701345" expanded="true" signature="382:447" ph="SELECT * FRO... VISITER" />
+            <marker date="1539936701345" expanded="true" signature="513:557" ph="SELECT * FRO... VISITER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/managerindex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/managergetresume.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/managerRecruitment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="111" column="40" lean-forward="true" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/managerinvite.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding />
         </state>
       </provider>

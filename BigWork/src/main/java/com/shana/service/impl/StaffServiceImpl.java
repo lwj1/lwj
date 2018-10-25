@@ -26,6 +26,6 @@ public class StaffServiceImpl implements StaffService{
     }
 
     public List<Staff> getAll() {
-        return null;
+        return staffDao.getAll();
     }
 }

@@ -70,6 +70,9 @@
     <select id="findResumeByVid" resultMap="R">
         SELECT * FROM RESUME WHERE RES_VID=#{vid}
     </select>
+    <select id="findResumeById" resultMap="R">
+        SELECT * FROM RESUME WHERE RES_ID=#{id}
+    </select>
     <resultMap id="R" type="com.shana.model.Resume">
         <id property="id" column="RES_ID"></id>
         <result property="name" column="RES_NAME"></result>

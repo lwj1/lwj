@@ -36,10 +36,9 @@ public class VisiterController {
     private RecruitmentService recruitmentService;
     @RequestMapping(value = "/visitloginJudge")
     public String visitloginJudge(@ModelAttribute("visiter") Visiter visiter, HttpServletRequest request,HttpSession session)throws Exception{
-        System.out.println(visiter);
         Visiter visiter1=visiterService.findByNameAndPass(visiter);
         if(visiter.getName().equals("root")&&visiter.getPass().equals("root")){
-            return "redirect:/managerlogin";
+            return "redirect:/managerindex.jsp";
         }
         if (null!=visiter1){
             Resume resume=resumeService.findResumeByVid(visiter1.getId());

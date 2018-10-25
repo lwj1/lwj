@@ -10,4 +10,5 @@ public interface ResumeDao {
     Resume findResumeByVid(int vid);
     int UpdateResumeByVid(Resume resume);
     int deleteResumeByVid(int vid);
+    Resume findResumeById(int id);
 }

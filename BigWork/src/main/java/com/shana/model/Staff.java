@@ -7,8 +7,8 @@ public class Staff {
     private int id;
     private int depId;
     private int posId;
-    private int name;
-    private int pass;
+    private String name;
+    private String pass;
     private String sex;
     private double salary;
     private int age;
@@ -43,20 +43,28 @@ public class Staff {
         this.posId = posId;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getPass() {
+    public String getPass() {
         return pass;
     }
 
-    public void setPass(int pass) {
+    public void setPass(String pass) {
         this.pass = pass;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public double getSalary() {

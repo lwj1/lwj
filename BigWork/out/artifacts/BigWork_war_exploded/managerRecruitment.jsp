@@ -112,10 +112,15 @@
                             ${i.posname}
                     </td>
                     <td>
-                            ${i.resid}
+                           <a href="getResumeById?id=${i.resid}">${i.resid}</a>
                     </td>
                     <td>
-                            ${i.readState}
+                        <c:if test="${i.readState==0}">
+                            未读
+                        </c:if>
+                        <c:if test="${i.readState!=0}">
+                            已读
+                        </c:if>
                     </td>
              <td>
                  <c:if test="${empty i.interviewTime}">

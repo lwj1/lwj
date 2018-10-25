@@ -84,4 +84,11 @@ public class ResumeController {
         resumeService.UpdateResumeByVid(resume);
         return "redirect:/addresumeback";
     }
+    @RequestMapping(value = "/getResumeById")
+    public String getResumeById(HttpServletRequest request,int id)throws Exception{
+        Resume resume=new Resume();
+        resume=resumeService.findResumeById(id);
+        request.setAttribute("resume",resume);
+        return "forward:/managergetresume.jsp";
+    }
 }

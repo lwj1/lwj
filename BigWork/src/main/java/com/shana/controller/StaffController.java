@@ -21,7 +21,6 @@ public class StaffController {
     public String invitevisiter(int id, HttpSession session, HttpServletRequest request)throws Exception{
         List<Staff> list=staffService.getAll();
         session.setAttribute("allStaff",list);
-        request.setAttribute("id",id);
         return "forward:/managerinvite.jsp";
 
     }
