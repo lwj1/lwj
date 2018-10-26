@@ -74,9 +74,6 @@ public class RecruitmentController {
             for(int i=0;i<list.size();i++){
                 list.get(i).setPosname(recruitmentInfoService.getByid(list.get(i).getRecruitmentInfoNo()));
             }
-            for (Recruitment recruitment : list) {
-                System.out.println(recruitment.getEmploy());
-            }
             session.setAttribute("recruitment",list);
             session.setAttribute("allRecruitment", list);
             return "redirect:/managerRecruitment.jsp";

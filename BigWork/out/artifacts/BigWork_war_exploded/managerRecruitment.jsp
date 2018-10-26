@@ -77,7 +77,8 @@
                     url:"comfirminterview",
                     data:{res_id:$("#a1").val},
                     success:function (obj) {
-                        alert("确认成功！")
+                        alert(obj)
+                        window.location.reload()
                     }
                 })
             })
@@ -89,6 +90,7 @@
                         ,recruitmentid:$("#c5").val()},
                     success:function (obj) {
                         alert(obj)
+                        window.location.href="getallrecruitment"
                     }
                 })
             })
@@ -98,7 +100,7 @@
 
 </head>
 <body>
-<c:out value="${recruitmentjudge}"></c:out>
+${recruitmentjudge}
 <form id="form1" runat="server">
     <c:if test="${not empty allRecruitment}">
         <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
@@ -114,10 +116,10 @@
                     状态
                 </th>
                 <th>
-
+                    面试状态
                 </th>
                 <th>
-
+                    是否录用
                 </th>
             </tr>
             <c:forEach items="${sessionScope.allRecruitment}" var="i">
@@ -145,14 +147,18 @@
                  <a href="managerinvite?id=${i.id}">邀请面试</a>
                  </c:if>
                  <c:if test="${not empty i.interviewTime}">
-                     已邀请面试
-                 </c:if>
+
+
                  <c:if test="${i.comfirm==0}">
-                     用户还未确认
+                     已邀请面试,用户还未确认
                  </c:if>
-                     </td>
-                 <c:if test="${i.comfirm==1}">
+                     <c:if test="${i.comfirm==1}">
+                     用户已确认面试
+                     </c:if>
+                     </c:if>
+
                     <td>
+                    <c:if test="${i.comfirm==1}">
                         <c:if test="${i.employ==0}">
                     <input type="button" value="录用" id="b1">
                      </c:if>
