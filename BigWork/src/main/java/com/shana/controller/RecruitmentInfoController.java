@@ -1,8 +1,10 @@
 package com.shana.controller;
 
+import com.shana.model.Department;
 import com.shana.model.Position;
 import com.shana.model.Recruitment;
 import com.shana.model.RecruitmentInfo;
+import com.shana.service.DepartmentService;
 import com.shana.service.PositionService;
 import com.shana.service.RecruitmentInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class RecruitmentInfoController {
     private RecruitmentInfoService recruitmentInfoService;
     @Autowired
     private PositionService positionService;
+    @Autowired
+    private DepartmentService departmentService;
     @RequestMapping(value = "/addRecruitmentInfo")
     public String addRecruitment(RecruitmentInfo recruitmentInfo)throws Exception{
         recruitmentInfoService.addRecruitmentInfo(recruitmentInfo);
@@ -46,6 +50,8 @@ public class RecruitmentInfoController {
         for(int i=0;i<list.size();i++){
             list.get(i).setPosName(positionService.getNameById(list.get(i).getPosId()));
         }
+        List<Position> list1=positionService.getAllPosition();
+        session.setAttribute("positionList",list1);
         session.setAttribute("RecruitmentInFoList",list);
 
         return "redirect:/managergetallrecruitmentinfo.jsp";

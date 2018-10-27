@@ -32,4 +32,24 @@ public class StaffServiceImpl implements StaffService{
     public String getStaffNameById(int id) {
         return staffDao.getStaffNameById(id);
     }
+
+    public Staff getByNameAndPass(Staff staff) {
+        return staffDao.getByNameAndPass(staff);
+    }
+
+    public int statusChange(int id) {
+        return staffDao.statusChange(id);
+    }
+
+    public int statusChange2(int id) {
+        return staffDao.statusChange2(id);
+    }
+
+    public List<Staff> getStaffByNameContain(String name) {
+        return staffDao.getStaffByNameContain(name);
+    }
+
+    public Staff getStaffById(int id) {
+        return staffDao.getStaffById(id);
+    }
 }

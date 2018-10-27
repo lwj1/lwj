@@ -40,7 +40,7 @@
         <div class="clear"></div>
         <hr>
     </c:forEach>
-    <a href="recruitmentInfoPosition">添加招聘信息</a>
+    <a href="addRecruitmentInfo.jsp">添加招聘信息</a>
     <div class="end"><a href="managerindex.jsp">返回上一级</a></div>
 </div>
 </body>

@@ -2,11 +2,13 @@ package com.shana.controller;
 
 import com.shana.model.Department;
 import com.shana.model.Position;
+import com.shana.model.Staff;
 import com.shana.service.DepartmentService;
 import com.shana.service.PositionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -29,7 +31,6 @@ public class PositionController {
             list.get(i).setDepName(departmentService.getDepNameById(list.get(i).getDepNo()));
         }
         List<Department> list1=departmentService.getAll();
-        System.out.println(list1);
        session.setAttribute("departList",list1);
        session.setAttribute("positionList",list);
         return "forward:/managerallposition.jsp";
@@ -57,4 +58,10 @@ public class PositionController {
         }
 
     }
+    @RequestMapping(value = "changeposition2")
+    public @ResponseBody List<Position> changeposition2(int DepNo)throws Exception{
+        List<Position>list=positionService.getListByDepNo(DepNo);
+        return list;
+    }
+
 }

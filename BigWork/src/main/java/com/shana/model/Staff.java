@@ -17,6 +17,35 @@ public class Staff implements Serializable{
     private int phone;
     private String email;
     private String name2;
+    private int status;
+    private String posName;
+    private String depName;
+
+    public String getPosName() {
+        return posName;
+    }
+
+    public void setPosName(String posName) {
+        this.posName = posName;
+    }
+
+    public String getDepName() {
+        return depName;
+    }
+
+    public void setDepName(String depName) {
+        this.depName = depName;
+    }
+
+
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     public Staff() {
     }

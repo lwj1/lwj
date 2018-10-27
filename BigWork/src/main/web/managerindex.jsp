@@ -20,5 +20,7 @@
 <a href="selectRecruitmentInfo">招聘信息管理</a>
 <a href="selectdepartment">部门管理</a>
 <a href="selectposition">职位管理</a>
+<a href="getallstaff">员工转正或离职</a>
+<a href="managerselectstaff.jsp">员工换岗</a>
 </body>
 </html>

@@ -32,6 +32,9 @@
     <select id="getNameById" resultType="java.lang.String">
         SELECT POS_NAME FROM L_POSITION WHERE POS_ID=#{id}
     </select>
+    <select id="getListByDepNo" resultMap="Pos">
+        SELECT * from L_POSITION WHERE POS_DEPNO=#{DepNo}
+    </select>
     <resultMap id="Pos" type="com.shana.model.Position">
         <id property="id" column="POS_ID"></id>
         <result property="DepNo" column="POS_DEPNO"></result>

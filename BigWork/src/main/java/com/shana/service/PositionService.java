@@ -15,4 +15,5 @@ public interface PositionService {
     boolean updatePosition(Position position);
     Position getById(int id);
     String getNameById(int id);
+    List<Position> getListByDepNo(int DepNo);
 }

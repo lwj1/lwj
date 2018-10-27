@@ -57,7 +57,7 @@ public class ResumeController {
         Visiter visiter= (Visiter) request.getSession().getAttribute("visiter");
             Resume resume=resumeService.findResumeByVid(visiter.getId());
             request.getSession().setAttribute("resume",resume);
-            return "../../visitLogin";
+            return "forward:/visitLogin.jsp";
     }
     @RequestMapping(value = "/updateresume")
     public String updateresume(HttpServletRequest request)throws Exception{

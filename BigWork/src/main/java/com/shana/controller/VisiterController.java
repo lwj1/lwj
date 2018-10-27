@@ -36,9 +36,6 @@ public class VisiterController {
     @RequestMapping(value = "/visitloginJudge")
     public String visitloginJudge(@ModelAttribute("visiter") Visiter visiter, HttpServletRequest request,HttpSession session)throws Exception{
         Visiter visiter1=visiterService.findByNameAndPass(visiter);
-        if(visiter.getName().equals("root")&&visiter.getPass().equals("root")){
-            return "redirect:/managerindex.jsp";
-        }
         if (null!=visiter1){
             Resume resume=resumeService.findResumeByVid(visiter1.getId());
             session.setAttribute("resume",resume);
@@ -48,7 +45,7 @@ public class VisiterController {
                 recInfo.get(i).setPosName(positionService.getNameById(recInfo.get(i).getPosId()));
             }
             session.setAttribute("recInfo",recInfo);
-            return "../../visitLogin";
+            return "forward:/visitLogin.jsp";
         }else {
             request.setAttribute("msg","用户名或密码错误");
             return "forward:/index.jsp";

@@ -43,6 +43,9 @@
         margin-right: auto;
         display: block;
     }
+    #c1{
+        float: right;
+    }
 </style>
 <body>
 <div id="a3">
@@ -52,11 +55,12 @@
             <li><span class="a2">用户名:</span><input name="name" class="a1"/></li><br>
 
             <li><span class="a2">密码:</span><input type="password" name="pass" class="a1"/></li><br>
-            <font color=red><c:out value="${msg}"></c:out> </font>
             <li><input type="submit" value="登陆" width="300px">
             <a href="register.jsp" ><span class="a4"></span><input type="button" value="注册" width="300px"></a></li>
+            <li><font color=red><c:out value="${msg}"></c:out></font><span id="c1">已是员工?<a href="staffindex.jsp">员工登陆</a></span></li>
         </ul>
     </form>
+
 </div>
 
 <h4 style="color: red">

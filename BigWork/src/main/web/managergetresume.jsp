@@ -91,6 +91,45 @@
         width: 696px;
     ;
     }
+    .t1
+    {
+        clear: both;
+        border: 1px solid #c9dae4;
+    }
+    .t1 tr th
+    {
+        color: #0d487b;
+        background: #f2f4f8;
+        line-height: 28px;
+        border-bottom: 1px solid #9cb6cf;
+        border-top: 1px solid #e9edf3;
+        font-weight: normal;
+        text-shadow: #e6ecf3 1px 1px 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 200px;
+    }
+    .t1 tr td
+    {
+        border-bottom: 1px solid #e9e9e9;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #444;
+        border-top: 1px solid #FFFFFF;
+        padding-left: 5px;
+        padding-right: 5px;
+        word-break: break-all;
+        width: 200px;
+    }
+    /* white-space:nowrap; text-overflow:ellipsis; */
+    tr.alt td
+    {
+        background: #ecf6fc; /*这行将给所有的tr加上背景色*/
+    }
+    tr.over td
+    {
+        background: #bcd4ec; /*这个将是鼠标高亮行的背景色*/
+    }
 </style>
 <script src="js/jquery-3.2.1.js"></script>
 

@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="LWJ">
       <ObjectId>49</ObjectId>
-      <IntrospectionTimestamp>2018-10-26.15:41:11</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-10-27.11:37:49</IntrospectionTimestamp>
       <CreatedTimestamp>2018-10-19.12:39:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-26.15:38:41</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-27.11:37:40</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -139,7 +139,7 @@
     <table id="33" parent="2" name="STAFF">
       <ObjectId>20363</ObjectId>
       <CreatedTimestamp>2018-10-24.16:28:22</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-24.16:28:22</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-27.11:37:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="34" parent="2" name="VISITER">
@@ -252,7 +252,7 @@
       <Position>8</Position>
       <DataType>NUMBER(5)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>0</DefaultExpression>
+      <DefaultExpression>0 </DefaultExpression>
     </column>
     <index id="53" parent="30" name="SYS_C007117">
       <ObjectId>20339</ObjectId>
@@ -492,7 +492,12 @@
       <DataType>NUMBER(20,2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="96" parent="33" name="SYS_C007155">
+    <column id="96" parent="33" name="STA_STATUS">
+      <Position>12</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <index id="97" parent="33" name="SYS_C007155">
       <ObjectId>20364</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-10-24.16:28:24</CreatedTimestamp>
@@ -501,7 +506,7 @@
       <ColNames>STA_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="97" parent="33" name="SYS_C007155">
+    <key id="98" parent="33" name="SYS_C007155">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-10-24.16:28:24</ModifiedTimestamp>
       <ColNames>STA_ID</ColNames>
@@ -509,27 +514,27 @@
       <UnderlyingIndexName>SYS_C007155</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="98" parent="34" name="VIS_ID">
+    <column id="99" parent="34" name="VIS_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="99" parent="34" name="VIS_NAME">
+    <column id="100" parent="34" name="VIS_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="100" parent="34" name="VIS_PASS">
+    <column id="101" parent="34" name="VIS_PASS">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="101" parent="34" name="VIS_INTERVIEW">
+    <column id="102" parent="34" name="VIS_INTERVIEW">
       <Position>4</Position>
       <DataType>NUMBER(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="102" parent="34" name="SYS_C007105">
+    <index id="103" parent="34" name="SYS_C007105">
       <ObjectId>20236</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-10-19.12:55:18</CreatedTimestamp>
@@ -538,7 +543,7 @@
       <ColNames>VIS_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="103" parent="34" name="SYS_C007105">
+    <key id="104" parent="34" name="SYS_C007105">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-10-19.12:55:18</ModifiedTimestamp>
       <ColNames>VIS_ID</ColNames>

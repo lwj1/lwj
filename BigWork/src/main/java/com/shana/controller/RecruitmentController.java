@@ -35,7 +35,7 @@ public class RecruitmentController {
             return "forward:/visitLogin.jsp";
         }
         recruitmentService.addRecruitment(recruitment);
-        return "../../visitLogin";
+        return "forward:/visitLogin.jsp";
     }
     @RequestMapping(value = "getrecruitmentbyresid")
     public String getrecruitmentbyresid(HttpSession session)throws Exception{
@@ -67,7 +67,6 @@ public class RecruitmentController {
     @RequestMapping(value = "/getallrecruitment")
     public String getallrecruitment(HttpSession session)throws Exception {
         List<Recruitment> list = recruitmentService.getAll();
-        System.out.println(list);
         if (list == null || list.isEmpty()) {
             session.setAttribute("recruitmentjudge", "暂无任何投递信息");
             return "forward:/managerindex.jsp";

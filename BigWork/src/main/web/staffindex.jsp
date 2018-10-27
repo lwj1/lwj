@@ -46,18 +46,22 @@
     #c1{
         float: right;
     }
+    #c2{
+        float: right;
+    }
 </style>
 <body>
 <div id="a3">
     <h3 style="text-align: center">陈俊集团</h3>
-    <form action="visitloginJudge" method="get">
+    <form action="staffloginJudge" method="get">
         <ul>
-            <li><span class="a2">用户名:</span><input name="name" class="a1"/></li><br>
+            <li><span class="a2">员工名:</span><input name="name" class="a1"/></li><br>
 
             <li><span class="a2">密码:</span><input type="password" name="pass" class="a1"/></li><br>
-            <li><input type="submit" value="登陆" width="300px">
-            <a href="register.jsp" ><span class="a4"></span><input type="button" value="注册" width="300px"></a></li>
-            <li><font color=red><c:out value="${msg}"></c:out></font><span id="c1">已是员工?<a href="staffindex.jsp">员工登陆</a></span></li>
+
+            <li><span id="c2"><input type="submit" value="登陆" width="300px"></span></li>
+            <li><font color=red><c:out value="${msg}"></c:out></font><span id="c1">不是员工?<a href="index.jsp">普通用户登陆</a></span></li>
+
         </ul>
     </form>
 

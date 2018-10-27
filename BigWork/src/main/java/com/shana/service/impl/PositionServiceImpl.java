@@ -54,4 +54,8 @@ public class PositionServiceImpl implements PositionService {
     public String getNameById(int id) {
         return positionDao.getNameById(id);
     }
+
+    public List<Position> getListByDepNo(int DepNo) {
+        return positionDao.getListByDepNo(DepNo);
+    }
 }
