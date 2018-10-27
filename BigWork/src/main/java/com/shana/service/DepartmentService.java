@@ -8,10 +8,10 @@ import java.util.List;
  * Created by Administrator on 2018/10/20.
  */
 public interface DepartmentService {
-    Boolean addDepartment(Department department);
-    List<Department> findEmpAndPos();
+    boolean addDepartment(Department department);;
     Department findByName(String name);
     boolean deleteDepartment(int id);
     boolean updateDepartment(Department department);
-    Department findEmp(int id);
+    List<Department> getAll();
+    String getDepNameById(int id);
 }

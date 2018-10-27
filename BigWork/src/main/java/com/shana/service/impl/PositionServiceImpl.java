@@ -46,4 +46,12 @@ public class PositionServiceImpl implements PositionService {
             return false;
         }
     }
+
+    public Position getById(int id) {
+        return positionDao.getById(id);
+    }
+
+    public String getNameById(int id) {
+        return positionDao.getNameById(id);
+    }
 }

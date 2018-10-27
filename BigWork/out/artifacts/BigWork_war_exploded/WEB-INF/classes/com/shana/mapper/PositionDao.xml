@@ -7,9 +7,6 @@
     <update id="updatePosition">
         UPDATE L_POSITION
         <set>
-            <if test="DepNo!=null">
-                POS_DEPNO=#{DepNo},
-            </if>
             <if test="name!=null">
                 POS_NAME=#{name},
             </if>
@@ -28,6 +25,12 @@
     </select>
     <select id="getPositionByName" resultMap="Pos">
         SELECT * FROM L_POSITION WHERE POS_NAME=#{name}
+    </select>
+    <select id="getById" resultMap="Pos">
+        SELECT * from L_POSITION WHERE POS_ID=#{id}
+    </select>
+    <select id="getNameById" resultType="java.lang.String">
+        SELECT POS_NAME FROM L_POSITION WHERE POS_ID=#{id}
     </select>
     <resultMap id="Pos" type="com.shana.model.Position">
         <id property="id" column="POS_ID"></id>

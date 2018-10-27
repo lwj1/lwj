@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class RecruitmentInfo implements Serializable{
     private int id;
-    private String posName;
+    private int posId;
     private String jobAddress;
     private String educationRequire;
     private String experienceRequire;
@@ -15,12 +15,22 @@ public class RecruitmentInfo implements Serializable{
     private String jobFunction;
     private int number;
     private String ageRequire;
+    private String posName;
+
     public String getPosName() {
         return posName;
     }
 
     public void setPosName(String posName) {
         this.posName = posName;
+    }
+
+    public int getPosId() {
+        return posId;
+    }
+
+    public void setPosId(int posId) {
+        this.posId = posId;
     }
 
     public String getExperienceRequire() {
@@ -94,5 +104,21 @@ public class RecruitmentInfo implements Serializable{
     }
 
     public RecruitmentInfo() {
+    }
+
+    @Override
+    public String toString() {
+        return "RecruitmentInfo{" +
+                "id=" + id +
+                ", posId=" + posId +
+                ", jobAddress='" + jobAddress + '\'' +
+                ", educationRequire='" + educationRequire + '\'' +
+                ", experienceRequire='" + experienceRequire + '\'' +
+                ", sexRequire='" + sexRequire + '\'' +
+                ", jobFunction='" + jobFunction + '\'' +
+                ", number=" + number +
+                ", ageRequire='" + ageRequire + '\'' +
+                ", posName='" + posName + '\'' +
+                '}';
     }
 }

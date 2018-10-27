@@ -4,10 +4,7 @@ import com.shana.model.Recruitment;
 import com.shana.model.RecruitmentInfo;
 import com.shana.model.Resume;
 import com.shana.model.Visiter;
-import com.shana.service.RecruitmentInfoService;
-import com.shana.service.RecruitmentService;
-import com.shana.service.ResumeService;
-import com.shana.service.VisiterService;
+import com.shana.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -34,6 +31,8 @@ public class VisiterController {
     private ResumeService resumeService;
     @Autowired
     private RecruitmentService recruitmentService;
+    @Autowired
+    private PositionService positionService;
     @RequestMapping(value = "/visitloginJudge")
     public String visitloginJudge(@ModelAttribute("visiter") Visiter visiter, HttpServletRequest request,HttpSession session)throws Exception{
         Visiter visiter1=visiterService.findByNameAndPass(visiter);
@@ -45,6 +44,9 @@ public class VisiterController {
             session.setAttribute("resume",resume);
             session.setAttribute("visiter",visiter1);
             List<RecruitmentInfo> recInfo=recruitmentInfoService.getAllRecruitmentInfo();
+            for(int i=0;i<recInfo.size();i++){
+                recInfo.get(i).setPosName(positionService.getNameById(recInfo.get(i).getPosId()));
+            }
             session.setAttribute("recInfo",recInfo);
             return "../../visitLogin";
         }else {

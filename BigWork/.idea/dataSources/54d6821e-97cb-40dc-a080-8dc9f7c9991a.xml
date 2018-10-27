@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="LWJ">
       <ObjectId>49</ObjectId>
-      <IntrospectionTimestamp>2018-10-25.15:44:57</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-10-26.15:41:11</IntrospectionTimestamp>
       <CreatedTimestamp>2018-10-19.12:39:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-25.15:44:43</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-26.15:38:41</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -127,7 +127,7 @@
     <table id="31" parent="2" name="RECRUITMENTINFO">
       <ObjectId>20353</ObjectId>
       <CreatedTimestamp>2018-10-23.01:12:46</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-23.11:34:42</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-26.15:38:41</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="32" parent="2" name="RESUME">
@@ -276,9 +276,9 @@
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="31" name="RECINFO_POSNAME">
+    <column id="56" parent="31" name="RECINFO_POSID">
       <Position>2</Position>
-      <DataType>VARCHAR2(20)|0</DataType>
+      <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="57" parent="31" name="RECINFO_JOBADDRESS">

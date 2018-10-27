@@ -9,9 +9,9 @@ import java.util.List;
  */
 public interface DepartmentDao {
     int addDepartment(Department department);
-    List<Department> findEmpAndPos();
     Department findByName(String name);
     int deleteDepartment(int id);
     int updateDepartment(Department department);
-    Department findEmp(int id);
+    List<Department> getAll();
+    String getDepNameById(int id);
 }

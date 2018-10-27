@@ -17,5 +17,8 @@
 </head>
 <body>
 <a href="getallrecruitment">查看所有投递</a>
+<a href="selectRecruitmentInfo">招聘信息管理</a>
+<a href="selectdepartment">部门管理</a>
+<a href="selectposition">职位管理</a>
 </body>
 </html>

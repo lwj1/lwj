@@ -15,27 +15,42 @@ import java.util.List;
 public class DepartmentServiceImpl implements DepartmentService {
     @Autowired
     private DepartmentDao departmentDao;
-    public Boolean addDepartment(Department department) {
-        return null;
+    public boolean addDepartment(Department department) {
+
+        ;if(departmentDao.addDepartment(department)!=0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
-    public List<Department> findEmpAndPos() {
-        return null;
-    }
 
     public Department findByName(String name) {
-        return null;
+        return departmentDao.findByName(name);
     }
 
     public boolean deleteDepartment(int id) {
-        return false;
+        if(departmentDao.deleteDepartment(id)!=0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     public boolean updateDepartment(Department department) {
-        return false;
+        if(departmentDao.updateDepartment(department)!=0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
-    public Department findEmp(int id) {
-        return null;
+    public List<Department> getAll() {
+        return departmentDao.getAll();
     }
+
+    public String getDepNameById(int id) {
+        return departmentDao.getDepNameById(id);
+    }
+
 }

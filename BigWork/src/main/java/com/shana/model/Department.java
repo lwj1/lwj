@@ -35,6 +35,5 @@ public class Department implements Serializable{
     }
 
     public Department() {
-
     }
 }

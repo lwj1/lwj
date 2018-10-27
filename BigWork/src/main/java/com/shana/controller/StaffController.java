@@ -50,9 +50,8 @@ public class StaffController {
         Visiter visiter=visiterService.getVisiterById(resume.getVid());
         staff.setName(visiter.getName());
         staff.setPass(visiter.getPass());
-        Position position=positionService.getPositionByName(recruitmentInfoService.getByid(recinfoid));
+        Position position=positionService.getById(recruitmentInfoService.getRecruInfoById(recinfoid).getPosId());
         staff.setPosId(position.getId());
-        System.out.println(position.getDepNo());
         staff.setDepId(position.getDepNo());
         staffService.addStaff(staff);
         recruitmentService.updateemploy(recruitmentid);

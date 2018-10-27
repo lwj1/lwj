@@ -13,4 +13,6 @@ public interface PositionDao {
     int deletaPosition(int id);
     Position getPositionByName(String name);
     int updatePosition(Position position);
+    Position getById(int id);
+    String getNameById(int id);
 }

@@ -13,4 +13,6 @@ public interface PositionService {
     boolean deletaPosition(int id);
     Position getPositionByName(String name);
     boolean updatePosition(Position position);
+    Position getById(int id);
+    String getNameById(int id);
 }

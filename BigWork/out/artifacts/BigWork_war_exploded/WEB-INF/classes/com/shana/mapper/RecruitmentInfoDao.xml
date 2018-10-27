@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shana.dao.RecruitmentInfoDao">
     <insert id="addRecruitmentInfo">
-        INSERT INTO RECRUITMENTINFO VALUES (RECINFO_SEQ.nextval,)
+        INSERT INTO RECRUITMENTINFO VALUES (RECINFO_SEQ.nextval,#{posId},#{jobAddress},#{educationRequire},#{sexRequire},#{jobFunction},#{number},#{ageRequire},#{experienceRequire})
     </insert>
     <update id="updateRecruitment">
         UPDATE RECRUITMENTINFO
         <set>
-            <if test="posName!=null">
-                RECINFO_POSNAME=#{posName},
+            <if test="posId!=null">
+                RECINFO_POSID=#{posId},
             </if>
             <if test="jobAddress!=null">
                 RECINFO_JOBADDRESS=#{jobAddress},
@@ -41,12 +41,12 @@
     <select id="getAllRecruitmentInfo" resultMap="RecInfo">
         SELECT * FROM RECRUITMENTINFO
     </select>
-    <select id="getByid" resultType="string">
-        SELECT RECINFO_POSNAME FROM RECRUITMENTINFO WHERE RECINFO_ID=#{id}
+    <select id="getRecruInfoById" resultMap="RecInfo">
+        SELECT * FROM RECRUITMENTINFO WHERE RECINFO_ID=#{id}
     </select>
     <resultMap id="RecInfo" type="com.shana.model.RecruitmentInfo">
         <id property="id" column="RECINFO_ID"></id>
-        <result property="posName" column="RECINFO_POSNAME"></result>
+        <result property="posId" column="RECINFO_POSID"></result>
         <result property="jobAddress" column="RECINFO_JOBADDRESS"></result>
         <result property="educationRequire" column="RECINFO_EDUCATIONREQUIRE"></result>
         <result property="sexRequire" column="RECINFO_SEXREQUIRE"></result>

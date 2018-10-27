@@ -13,5 +13,5 @@ public interface RecruitmentInfoDao {
     int deleteRecruitmentInfo(int id);
     int updateRecruitment(RecruitmentInfo recruitmentInfo);
     List<RecruitmentInfo> getAllRecruitmentInfo();
-    String getByid(int id);
+    RecruitmentInfo getRecruInfoById(int id);
 }

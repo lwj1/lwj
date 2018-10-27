@@ -9,7 +9,7 @@ public class Position implements Serializable{
     private int id;
     private int DepNo;
     private String name;
-
+    private String depName;
 
     public int getId() {
         return id;
@@ -27,7 +27,6 @@ public class Position implements Serializable{
         DepNo = depNo;
     }
 
-
     public String getName() {
         return name;
     }
@@ -36,7 +35,25 @@ public class Position implements Serializable{
         this.name = name;
     }
 
+    public String getDepName() {
+        return depName;
+    }
+
+    public void setDepName(String depName) {
+        this.depName = depName;
+    }
+
     public Position() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Position{" +
+                "id=" + id +
+                ", DepNo=" + DepNo +
+                ", name='" + name + '\'' +
+                ", DepName='" + depName + '\'' +
+                '}';
     }
 }

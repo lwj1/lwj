@@ -119,6 +119,9 @@
             <td>
                 ${i.staffName}
             </td>
+            <c:if test="${empty i.staffName}">
+                已投递请等待
+            </c:if>
             <c:if test="${not empty i.staffName}">
             <td>
                 <c:if test="${i.comfirm==0}">

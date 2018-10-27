@@ -1,9 +1,8 @@
 package com.shana.controller;
 
-import com.shana.model.Recruitment;
-import com.shana.model.Resume;
-import com.shana.model.Staff;
-import com.shana.model.Visiter;
+import com.shana.dao.PositionDao;
+import com.shana.model.*;
+import com.shana.service.PositionService;
 import com.shana.service.RecruitmentInfoService;
 import com.shana.service.RecruitmentService;
 import com.shana.service.StaffService;
@@ -27,9 +26,10 @@ public class RecruitmentController {
     private RecruitmentInfoService recruitmentInfoService;
     @Autowired
     private StaffService staffService;
+    @Autowired
+    private PositionService positionService;
     @RequestMapping(value = "/addrecruitment")
     public String addrecruitment(Recruitment recruitment,HttpServletRequest request)throws Exception{
-        System.out.println(recruitment);
         if(recruitmentService.getByResidAndRecInfoNo(recruitment)){
             request.setAttribute("msg","你已经投递过该简历了");
             return "forward:/visitLogin.jsp";
@@ -47,8 +47,8 @@ public class RecruitmentController {
             return "forward:/getrecruitment.jsp";
         }else {
             for(int i=0;i<list.size();i++){
-
-                list.get(i).setPosname(recruitmentInfoService.getByid(list.get(i).getRecruitmentInfoNo()));
+                RecruitmentInfo recruitmentInfo=recruitmentInfoService.getRecruInfoById(list.get(i).getRecruitmentInfoNo());
+                list.get(i).setPosname(positionService.getNameById(recruitmentInfo.getPosId()));
                 list.get(i).setStaffName(staffService.getStaffNameById(list.get(i).getStaffNo()));
             }
             session.setAttribute("recruitment",list);
@@ -67,12 +67,15 @@ public class RecruitmentController {
     @RequestMapping(value = "/getallrecruitment")
     public String getallrecruitment(HttpSession session)throws Exception {
         List<Recruitment> list = recruitmentService.getAll();
+        System.out.println(list);
         if (list == null || list.isEmpty()) {
             session.setAttribute("recruitmentjudge", "暂无任何投递信息");
-            return "forward:/getrecruitment.jsp";
+            return "forward:/managerindex.jsp";
         } else {
             for(int i=0;i<list.size();i++){
-                list.get(i).setPosname(recruitmentInfoService.getByid(list.get(i).getRecruitmentInfoNo()));
+
+                RecruitmentInfo recruitmentInfo=recruitmentInfoService.getRecruInfoById(list.get(i).getRecruitmentInfoNo());
+                list.get(i).setPosname(positionService.getNameById(recruitmentInfo.getPosId()));
             }
             session.setAttribute("recruitment",list);
             session.setAttribute("allRecruitment", list);
