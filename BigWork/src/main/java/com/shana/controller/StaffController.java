@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -105,7 +106,6 @@ public class StaffController {
     @RequestMapping(value = "/staffpositionchange")
     public String staffpositionchange(HttpServletRequest request,String name,HttpServletResponse response)throws Exception{
         String name1="%"+name+"%";
-        System.out.println(name1);
         List<Staff> list=staffService.getStaffByNameContain(name1);
         for(int i=0;i<list.size();i++){
             list.get(i).setPosName(positionService.getNameById(list.get(i).getPosId()));
@@ -118,6 +118,27 @@ public class StaffController {
             request.setAttribute("staffList2",null);
             request.setAttribute("msg","查询不到该姓名");
             return "forward:/managerselectstaff.jsp";
+        }
+    }
+    @RequestMapping(value = "changeposition3")
+    public  @ResponseBody String changeposition3(Staff staff)throws Exception{
+        Staff staff1=staffService.getStaffById(staff.getId());
+        if(staff1.getDepId()==staff.getDepId()&&staff1.getPosId()==staff.getPosId()){
+            return "换岗失败，该员工本就是该职位";
+        }else {
+            staffService.updateDepIdAndPosId(staff);
+            return "换岗成功";
+
+        }
+    }
+    @RequestMapping(value = "/rewardfindstaff")
+    public @ResponseBody void rewardfindstaff(HttpServletResponse response,int id)throws Exception{
+        response.setContentType("text/text;charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        if(staffService.getStaffById(id)==null){
+            response.getWriter().print("不存在该员工");
+        }else {
+            response.getWriter().print("null");
         }
     }
 

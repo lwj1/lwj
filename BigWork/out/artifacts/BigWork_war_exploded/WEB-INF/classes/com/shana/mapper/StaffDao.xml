@@ -11,6 +11,9 @@
     <update id="statusChange2">
         UPDATE STAFF SET STA_STATUS=3 WHERE STA_ID=#{id}
     </update>
+    <update id="updateDepIdAndPosId">
+        UPDATE STAFF SET STA_DEPID=#{depId},STA_POSID=#{posId} where STA_ID=#{id}
+    </update>
     <select id="getAll" resultMap="Sta">
         SELECT * FROM STAFF
     </select>

@@ -52,4 +52,12 @@ public class StaffServiceImpl implements StaffService{
     public Staff getStaffById(int id) {
         return staffDao.getStaffById(id);
     }
+
+    public Boolean updateDepIdAndPosId(Staff staff) {
+        if(staffDao.updateDepIdAndPosId(staff)!=0){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

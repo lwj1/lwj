@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.TrainingDao">
+    <insert id="addTraining">
+        INSERT INTO TRAINING VALUES (TRA_SEQ.nextval,#{name},#{message},#{address},#{duration})
+    </insert>
+    <update id="updateTraining">
+        UPDATE TRAINING
+        <set>
+            <if test="name!=null">
+                TRA_NAME=#{name},
+            </if>
+            <if test="message!=null">
+                TRA_MESSAGE=#{message},
+            </if>
+            <if test="address!=null">
+                TRA_ADDRESS=#{address},
+            </if>
+            <if test="duration!=null">
+                TRA_DURATION=#{duration}
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                TRA_ID=#{id}
+            </if>
+        </where>
+    </update>
+    <delete id="deleteTraining">
+        DELETE FROM TRAINING WHERE TRA_ID=#{id}
+    </delete>
+    <select id="getById" resultMap="Tra">
+        SELECT * FROM TRAINING WHERE TRA_ID=#{id}
+    </select>
+    <select id="getAll" resultMap="Tra">
+        SELECT * FROM TRAINING
+    </select>
+    <select id="getByName" resultMap="Tra">
+        SELECT * FROM TRAINING WHERE TRA_NAME=#{name}
+    </select>
+    <resultMap id="Tra" type="com.shana.model.Training">
+        <id property="id" column="TRA_ID"></id>
+        <result property="message" column="TRA_MESSAGE"/>
+        <result property="name" column="TRA_NAME"/>
+        <result property="duration" column="TRA_DURATION"/>
+        <result property="address" column="TRA_ADDRESS"/>
+    </resultMap>
+</mapper>

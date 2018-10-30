@@ -59,7 +59,7 @@
 
             <li><span class="a2">密码:</span><input type="password" name="pass" class="a1"/></li><br>
 
-            <li><span id="c2"><input type="submit" value="登陆" width="300px"></span></li>
+            <li><span id="c2"><input type="submit" value="登陆" width="300px"></span></li><br>
             <li><font color=red><c:out value="${msg}"></c:out></font><span id="c1">不是员工?<a href="index.jsp">普通用户登陆</a></span></li>
 
         </ul>

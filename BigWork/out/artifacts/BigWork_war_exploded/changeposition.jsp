@@ -43,12 +43,14 @@
             <option value="">请选择</option>
         </select></td>
         <td>
-            <a href="managerselectstaff.jsp">返回上一级</a>
+            <input type="button" value="确定" id="w1"></a>
+            <input type="hidden" value="${staff.id}">
         </td>
     </tr>
 
     </table>
 </form>
+<div style="text-align: right"><a href="managerindex.jsp">返回上一级</a></div>
 </body>
 
 <script src="js/jquery-3.2.1.js"></script>
@@ -66,6 +68,20 @@
                     }
                 }
             })
+        })
+        $("#w1").click(function () {
+            if(confirm("确认修改？")){
+                $.ajax({
+                    type:"post",
+                    url:"changeposition3",
+                    data:{posId:$(this).parent().prev().children().val(),depId:$(this).parent().prev().prev().children().val(),id:$(this).next().val()},
+                    success:function (obj) {
+                        alert(obj)
+                    }
+                })
+            }
+
+
         })
     })
 </script>

@@ -22,5 +22,7 @@
 <a href="selectposition">职位管理</a>
 <a href="getallstaff">员工转正或离职</a>
 <a href="managerselectstaff.jsp">员工换岗</a>
+<a href="selecttraining">培训信息</a>
+<a href="selectreward">奖惩信息</a>
 </body>
 </html>

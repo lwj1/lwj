@@ -63,7 +63,6 @@ public class ResumeController {
     public String updateresume(HttpServletRequest request)throws Exception{
         Resume resume=new Resume();
         Visiter visiter= (Visiter) request.getSession().getAttribute("visiter");
-        System.out.println(request.getParameter("name"));
         resume.setVid(visiter.getId());
         resume.setAge(Integer.parseInt(request.getParameter("age")));
         resume.setBirth(request.getParameter("birth"));

@@ -16,4 +16,5 @@ public interface StaffDao {
     int statusChange2(int id);
     List<Staff> getStaffByNameContain(String name);
     Staff getStaffById(int id);
+    int updateDepIdAndPosId(Staff staff);
 }
