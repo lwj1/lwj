@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.SalaryDao">
+    <insert id="addsalary">
+        INSERT INTO SALARY VALUES (SAL_SEQ.nextval,#{staffId},#{basicpay}+#{basicpay}*0.2+#{reward}-500,to_number(to_char(sysdate,'yyyy')),to_number(to_char(sysdate,'MM'))-1,#{basicpay},
+        #{basicpay}*0.2,#{reward},500)
+    </insert>
+    <select id="getallbyYearAndMonth" resultMap="Sal">
+        SELECT * FROM SALARY WHERE SAL_YEAR=#{0} and SAL_MONTH=#{1}
+    </select>
+    <select id="getByStaffId" resultMap="Sal">
+        SELECT * FROM SALARY WHERE SAL_STAFFID=#{staffId}
+    </select>
+    <resultMap id="Sal" type="com.shana.model.Salary">
+        <id property="id" column="SAL_ID"/>
+        <result property="staffId" column="SAL_STAFFID"/>
+        <result property="salary" column="SAL_SALARY"/>
+        <result property="month" column="SAL_MONTH"/>
+        <result property="year" column="SAL_YEAR"/>
+        <result property="basicpay" column="SAL_BASICPAY"/>
+        <result property="bonus" column="SAL_BONUS"/>
+        <result property="reward" column="SAL_REWARD"/>
+        <result property="security" column="SAL_SECURITY"/>
+    </resultMap>
+</mapper>

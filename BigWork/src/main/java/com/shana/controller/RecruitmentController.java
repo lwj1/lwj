@@ -38,12 +38,12 @@ public class RecruitmentController {
         return "forward:/visitLogin.jsp";
     }
     @RequestMapping(value = "getrecruitmentbyresid")
-    public String getrecruitmentbyresid(HttpSession session)throws Exception{
+    public String getrecruitmentbyresid(HttpSession session,HttpServletRequest request)throws Exception{
         Resume resume= (Resume) session.getAttribute("resume");
         List<Recruitment> list= recruitmentService.getByResid(resume.getId());
 
         if(list==null||list.isEmpty()){
-            session.setAttribute("recruitmentjudge","暂无任何投递信息");
+            request.setAttribute("recruitmentjudge","暂无任何投递信息");
             return "forward:/getrecruitment.jsp";
         }else {
             for(int i=0;i<list.size();i++){

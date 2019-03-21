@@ -60,4 +60,24 @@ public class StaffServiceImpl implements StaffService{
             return false;
         }
     }
+
+    public List<Staff> getByDepAndPos(Staff staff) {
+        return staffDao.getByDepAndPos(staff);
+    }
+
+    public boolean updatestaff(Staff staff) {
+        if(staffDao.updatestaff(staff)!=0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public List<Staff> getBydepNo(int depNo) {
+        return staffDao.getBydepNo(depNo);
+    }
+
+    public List<Staff> getByposNo(int posNo) {
+        return staffDao.getByposNo(posNo);
+    }
 }

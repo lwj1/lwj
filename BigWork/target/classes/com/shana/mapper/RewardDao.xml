@@ -2,7 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shana.dao.RewardDao">
     <insert id="addReward">
-        INSERT INTO REWARD VALUES (REW_SEQ.nextval,#{staffId},#{money},#{reason},sysdate)
+        INSERT INTO REWARD VALUES (REW_SEQ.nextval,#{staffId},#{money},#{reason},to_char(sysdate,'YYYY-MM-DD HH24:MI:SS')）
+    </insert>
+    <insert id="addReward2">
+        INSERT INTO REWARD VALUES (REW_SEQ.nextval,#{staffId},#{money},#{reason},to_char(ADD_MONTHS(sysdate,-1),'YYYY-MM-DD HH24:MI:SS')）
     </insert>
     <update id="updateReward">
         UPDATE REWARD
@@ -28,6 +31,15 @@
     </select>
     <select id="getById" resultMap="Rew">
         SELECT * FROM REWARD WHERE REW_ID=#{id]}
+    </select>
+    <select id="getMoneyByStaffId" resultType="java.lang.Double">
+        SELECT REW_MONEY FROM REWARD WHERE REW_STAFFID=#{id}
+    </select>
+    <select id="getMoneyByStaffIdAndYearMonth" resultMap="Rew">
+        SELECT REW_MONEY FROM REWARD WHERE REW_STAFFID=#{0} and REW_DATE LIKE #{1}
+    </select>
+    <select id="getByStaffIdAndYearMonth" resultMap="Rew">
+        SELECT * FROM REWARD WHERE REW_STAFFID=#{0} and REW_DATE LIKE #{1}
     </select>
     <resultMap id="Rew" type="com.shana.model.Reward">
         <id property="id" column="REW_ID"/>

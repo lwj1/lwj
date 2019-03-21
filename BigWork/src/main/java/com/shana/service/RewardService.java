@@ -13,5 +13,9 @@ public interface RewardService {
     List<Reward> getAll();
     List<Reward> getByStaffId(int staffId);
     Reward getById(int id);
+    double getMoneyByStaffId(int id);
+    List<Reward> getMoneyByStaffIdAndYearMonth(int id,String date);
+    int addReward2(Reward reward);
+    List<Reward> getByStaffIdAndYearMonth(int id,String date);
 
 }

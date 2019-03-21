@@ -9,9 +9,12 @@ import java.util.List;
  */
 public interface RewardDao{
     int addReward(Reward reward);
+    int addReward2(Reward reward);
     int updateReward(Reward reward);
     List<Reward> getAll();
     List<Reward> getByStaffId(int staffId);
     Reward getById(int id);
-
+    double getMoneyByStaffId(int id);
+    List<Reward> getMoneyByStaffIdAndYearMonth(int id,String date);
+    List<Reward> getByStaffIdAndYearMonth(int id,String date);
 }

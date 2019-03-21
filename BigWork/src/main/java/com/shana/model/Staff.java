@@ -14,12 +14,21 @@ public class Staff implements Serializable{
     private String sex;
     private double salary;
     private int age;
-    private int phone;
+    private long phone;
     private String email;
     private String name2;
     private int status;
     private String posName;
     private String depName;
+    private int status2;
+
+    public int getStatus2() {
+        return status2;
+    }
+
+    public void setStatus2(int status2) {
+        this.status2 = status2;
+    }
 
     public String getPosName() {
         return posName;
@@ -114,11 +123,11 @@ public class Staff implements Serializable{
         this.age = age;
     }
 
-    public int getPhone() {
+    public long getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(long phone) {
         this.phone = phone;
     }
 
@@ -136,5 +145,25 @@ public class Staff implements Serializable{
 
     public void setName2(String name2) {
         this.name2 = name2;
+    }
+
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "id=" + id +
+                ", depId=" + depId +
+                ", posId=" + posId +
+                ", name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
+                ", sex='" + sex + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                ", phone=" + phone +
+                ", email='" + email + '\'' +
+                ", name2='" + name2 + '\'' +
+                ", status=" + status +
+                ", posName='" + posName + '\'' +
+                ", depName='" + depName + '\'' +
+                '}';
     }
 }

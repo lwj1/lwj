@@ -42,4 +42,20 @@ public class RewardServiceImpl implements RewardService{
     public Reward getById(int id) {
         return rewardDao.getById(id);
     }
+
+    public double getMoneyByStaffId(int id) {
+        return rewardDao.getMoneyByStaffId(id);
+    }
+
+    public List<Reward> getMoneyByStaffIdAndYearMonth(int id,String date) {
+        return rewardDao.getMoneyByStaffIdAndYearMonth(id,date);
+    }
+
+    public int addReward2(Reward reward) {
+        return rewardDao.addReward2(reward);
+    }
+
+    public List<Reward> getByStaffIdAndYearMonth(int id, String date) {
+        return rewardDao.getByStaffIdAndYearMonth(id,date);
+    }
 }

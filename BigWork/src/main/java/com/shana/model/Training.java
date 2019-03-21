@@ -11,6 +11,15 @@ public class Training implements Serializable{
     private String message;
     private String duration;
     private String address;
+    private int status;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     public Training() {
     }

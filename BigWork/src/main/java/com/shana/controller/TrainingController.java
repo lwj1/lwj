@@ -47,7 +47,7 @@ public class TrainingController {
     }
     @RequestMapping(value = "/updatetraining2")
     public String updatedepartment2(Training training)throws Exception{
-        System.out.println(training);
+
         trainingService.updateTraining(training);
         return "forward:/selecttraining";
     }

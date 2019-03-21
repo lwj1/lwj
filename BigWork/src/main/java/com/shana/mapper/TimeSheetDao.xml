@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.TimeSheetDao">
+    <insert id="addTimeSheet">
+        INSERT INTO TIMESHEET VALUES (TIM_SEQ.nextval,#{staffId},#{starttime},'','')
+    </insert>
+    <update id="updateTimeSheet">
+        UPDATE TIMESHEET
+        <set>
+            <if test="endtime!=null">
+                TIM_ENDTIME=#{endtime},
+            </if>
+            <if test="status!=null">
+                TIM_STATUS=#{status}
+            </if>
+        </set>
+        <where>
+            <if test="staffId!=null">
+                TIM_STAFFID=#{staffId}
+            </if>
+        </where>
+    </update>
+    <select id="getByStaffId" resultMap="Tim">
+        SELECT * from TIMESHEET WHERE TIM_STAFFID=#{staffId}
+    </select>
+    <select id="getByYearAndMonth" resultMap="Tim">
+        SELECT * FROM TIMESHEET WHERE
+    </select>
+    <select id="getByStaffIdAndDay" resultMap="Tim">
+        SELECT * FROM TIMESHEET WHERE TIM_STAFFID=#{0} and TIM_STARTTIME like #{1}
+    </select>
+    <select id="getByStaffIdAndDay2" resultMap="Tim">
+        SELECT * FROM TIMESHEET WHERE TIM_STAFFID=#{0} and TIM_ENDTIME like #{1}
+    </select>
+    <select id="getEndtimeByStaffIdAndDay" resultType="java.lang.String">
+        SELECT TIM_ENDTIME FROM TIMESHEET WHERE TIM_STAFFID=#{0} and TIM_ENDTIME like #{1}
+    </select>
+    <resultMap id="Tim" type="com.shana.model.TimeSheet">
+        <id property="id" column="TIM_ID"/>
+        <result property="staffId" column="TIM_STAFFID"/>
+        <result property="starttime" column="TIM_STARTTIME"/>
+        <result property="endtime" column="TIM_ENDTIME"/>
+        <result property="status" column="TIM_STATUS"/>
+    </resultMap>
+</mapper>

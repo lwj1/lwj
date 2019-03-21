@@ -20,7 +20,7 @@
 <div class="item">
     <form action="/addRecruitmentInfo" id="a2">
 <table>
-
+<i
     <div class="tit">基本信息</div>
     <div class="itemli"><span>职业名称</span><select name="posId">
         <c:forEach items="${positionList}" var="i">

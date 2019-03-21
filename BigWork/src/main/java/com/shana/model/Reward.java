@@ -8,9 +8,10 @@ import java.io.Serializable;
 public class Reward implements Serializable{
     private int id;
     private int staffId;
-    private int money;
+    private double money;
     private String reason;
     private String date;
+    private int reconsider;
 
     @Override
     public String toString() {
@@ -21,6 +22,14 @@ public class Reward implements Serializable{
                 ", reason='" + reason + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public int getReconsider() {
+        return reconsider;
+    }
+
+    public void setReconsider(int reconsider) {
+        this.reconsider = reconsider;
     }
 
     public int getId() {
@@ -39,11 +48,11 @@ public class Reward implements Serializable{
         this.staffId = staffId;
     }
 
-    public int getMoney() {
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(double money) {
         this.money = money;
     }
 

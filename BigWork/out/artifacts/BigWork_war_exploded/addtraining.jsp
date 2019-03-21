@@ -27,7 +27,7 @@
             <div class="clear"></div>
             <div class="itemli"><span>培训地址</span><input name="address"></div>
             <div class="clear"></div>
-            <div><span>培训详细信息</span><input type="text" name="messagge"></div>
+            <div><span>培训详细信息</span><input type="text" name="message"></div>
             <div class="end"><input type="button" value="添加" id="a1"></div>
             ${msg1}
             <div class="clear"></div>

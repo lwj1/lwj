@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.Staff_TrainingDao">
+    <insert id="addst">
+        INSERT  INTO STAFF_TRAINING VALUES (ST_SEQ.nextval,#{staffId},#{traId},0)
+    </insert>
+    <update id="updatest">
+        UPDATE STAFF_TRAINING SET ST_STATUS=2 WHERE ST_ID=#{id}
+    </update>
+    <update id="updatest2">
+          UPDATE STAFF_TRAINING SET ST_STATUS=1 WHERE ST_ID=#{id}
+    </update>
+    <select id="getByStaffid" resultMap="ST">
+        SELECT * FROM STAFF_TRAINING WHERE ST_STAID=#{staffid}
+    </select>
+    <select id="getByTraid" resultMap="ST">
+        SELECT * FROM STAFF_TRAINING WHERE ST_TRAID=#{traid}
+    </select>
+    <resultMap id="ST" type="com.shana.model.Staff_Training">
+        <id property="id" column="ST_ID"/>
+        <result property="staffId" column="ST_STAID"/>
+        <result property="traId" column="ST_TRAID"/>
+        <result property="status" column="ST_STATUS"/>
+    </resultMap>
+</mapper>

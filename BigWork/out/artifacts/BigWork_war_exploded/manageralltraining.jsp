@@ -26,14 +26,16 @@ ${msg}
             <th><span class="a1">培训时长</span></th>
             <th><span class="a1">培训地址</span></th>
             <th><span class="a1">培训内容</span></th>
+            <th><span class="a1">培训员工信息</span></th>
             <th></th>
         </tr>
         <c:forEach items="${trainingList}" var="i">
         <tr align="center">
-            <td><a href="stafftraining?tid=${i.id}">${i.name}</a></td>
+            <td><a href="managersendtraining?tid=${i.id}">${i.name}</a></td>
             <td>${i.duration}</td>
             <td>${i.address}</td>
             <td>${i.message}</td>
+            <td><a href="managertrainingstaff?id=${i.id}">查看</a></td>
             <td>
                 <a href="updatetraining?name=${i.name}">修改培训信息</a>
                 <a href="deletetraining?id=${i.id}">移除</a>
@@ -41,6 +43,7 @@ ${msg}
             </c:forEach>
         </tr>
         <tr align="center">
+            <td></td>
             <td></td>
             <td></td>
             <td></td>

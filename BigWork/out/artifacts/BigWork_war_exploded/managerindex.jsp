@@ -16,6 +16,9 @@
     <title>Title</title>
 </head>
 <body>
+<center>程俊集团</center>
+<div style="text-align: right"><font color="purple" size="4">你好，管理员</font></div>
+<hr>
 <a href="getallrecruitment">查看所有投递</a>
 <a href="selectRecruitmentInfo">招聘信息管理</a>
 <a href="selectdepartment">部门管理</a>
@@ -24,5 +27,7 @@
 <a href="managerselectstaff.jsp">员工换岗</a>
 <a href="selecttraining">培训信息</a>
 <a href="selectreward">奖惩信息</a>
+<a href="managerselectsalary">薪资信息</a>
+<a href="managerreconsideration">复议申请</a>
 </body>
 </html>

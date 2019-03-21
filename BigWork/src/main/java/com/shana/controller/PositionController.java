@@ -5,12 +5,14 @@ import com.shana.model.Position;
 import com.shana.model.Staff;
 import com.shana.service.DepartmentService;
 import com.shana.service.PositionService;
+import com.shana.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -23,7 +25,8 @@ public class PositionController {
     private PositionService positionService;
     @Autowired
     private DepartmentService departmentService;
-
+    @Autowired
+    private StaffService staffService;
     @RequestMapping(value = "/selectposition")
     public String recruitmentInfoPosition(HttpSession session)throws Exception{
         List<Position> list=positionService.getAllPosition();
@@ -62,6 +65,17 @@ public class PositionController {
     public @ResponseBody List<Position> changeposition2(int DepNo)throws Exception{
         List<Position>list=positionService.getListByDepNo(DepNo);
         return list;
+    }
+    @RequestMapping(value = "/deleteposition")
+    public void deleteposition(int id, HttpServletResponse response)throws Exception{
+        response.setContentType("text/text;charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        List<Staff>list=staffService.getByposNo(id);
+        if(list.size()!=0){
+            response.getWriter().print("该职位下有员工不可删除");
+        }else {
+            positionService.deletaPosition(id);
+        }
     }
 
 }

@@ -32,7 +32,7 @@
             <div class="clear"></div>
         </table>
     </form>
-    <div style="text-align: right"><a href="manageralldepartment.jsp">返回上一级</a></div>
+    <div style="text-align: right"><a href="managerallposition.jsp">返回上一级</a></div>
 </div>
 </body>
 <script src="js/jquery-3.2.1.js"></script>

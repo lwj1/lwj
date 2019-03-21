@@ -17,7 +17,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="updatedepartment2" id="a2">
+<form action="updateposition2" id="a2">
     <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
            cellspacing="0">
         <tr align="center">
@@ -37,7 +37,7 @@
 
     </table>
 </form>
-<div style="text-align: right"><a href="manageralldepartment.jsp">返回上一级</a></div>
+<div style="text-align: right"><a href="managerallposition.jsp">返回上一级</a></div>
 </body>
 <script src="js/jquery-3.2.1.js"></script>
 <script>

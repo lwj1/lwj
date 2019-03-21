@@ -30,7 +30,7 @@ ${msg}
         </tr>
         <c:forEach items="${rewardList}" var="i">
         <tr align="center">
-            <td><a href="rewardgetstaff?tid=${i.staffId}">${i.staffId}</a></td>
+            <td>${i.staffId}</td>
             <td>${i.money}</td>
             <td>${i.reason}</td>
             <td>${i.date}</td>

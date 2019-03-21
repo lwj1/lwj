@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shana.dao.ReconsiderationDao">
+    <insert id="addreconsideration">
+        INSERT INTO RECONSIDERATION VALUES (RECO_SEQ.nextval,#{rewid},#{reason},0)
+    </insert>
+    <update id="updatereconsideration">
+        UPDATE RECONSIDERATION SET RECO_STATU=2 WHERE RECO_ID=#{id}
+    </update>
+    <update id="updatereconsideration2">
+        UPDATE RECONSIDERATION SET RECO_STATU=1 WHERE RECO_ID=#{id}
+    </update>
+    <select id="getByRewid" resultMap="RECO">
+        SELECT * FROM RECONSIDERATION WHERE RECO_REWID=#{rewid}
+    </select>
+    <select id="getAll" resultMap="RECO">
+        SELECT * from RECONSIDERATION
+    </select>
+    <resultMap id="RECO" type="com.shana.model.Reconsideration">
+        <id property="id" column="RECO_ID"/>
+        <result property="rewid" column="RECO_REWID"/>
+        <result property="reason" column="RECO_REASON"/>
+        <result property="statu" column="RECO_STATU"/>
+    </resultMap>
+</mapper>

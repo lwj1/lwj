@@ -17,4 +17,8 @@ public interface StaffDao {
     List<Staff> getStaffByNameContain(String name);
     Staff getStaffById(int id);
     int updateDepIdAndPosId(Staff staff);
+    List<Staff> getByDepAndPos(Staff staff);
+    int updatestaff(Staff staff);
+    List<Staff> getBydepNo(int depNo);
+    List<Staff> getByposNo(int posNo);
 }

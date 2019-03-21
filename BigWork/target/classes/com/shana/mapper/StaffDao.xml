@@ -14,9 +14,31 @@
     <update id="updateDepIdAndPosId">
         UPDATE STAFF SET STA_DEPID=#{depId},STA_POSID=#{posId} where STA_ID=#{id}
     </update>
-    <select id="getAll" resultMap="Sta">
-        SELECT * FROM STAFF
-    </select>
+    <update id="updatestaff">
+        UPDATE STAFF
+        <set>
+            <if test="name2!=null">
+                STA_NAME2=#{name2},
+            </if>
+            <if test="sex!=null">
+                STA_SEX=#{sex},
+            </if>
+            <if test="age!=null">
+                STA_AGE=#{age},
+            </if>
+            <if test="email!=null">
+                STA_EMAIL=#{email},
+            </if>
+            <if test="phone!=null">
+                STA_PHONE=#{phone}
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                STA_ID=#{id}
+            </if>
+        </where>
+    </update>
     <select id="getStaffNameById" resultType="java.lang.String">
         SELECT STA_NAME2 FROM STAFF WHERE STA_ID=#{id}
     </select>
@@ -28,6 +50,26 @@
     </select>
     <select id="getStaffById" resultMap="Sta">
         SELECT * FROM STAFF WHERE STA_ID=#{id}
+    </select>
+    <select id="getByDepAndPos" resultMap="Sta">
+        SELECT * FROM STAFF
+        <where>
+            <if test="depId!=null">
+                STA_DEPID=#{depId}
+            </if>
+            <if test="posId!=null">
+             And   STA_POSID=#{posId}
+            </if>
+        </where>
+    </select>
+    <select id="getAll" resultMap="Sta">
+        SELECT * FROM STAFF
+    </select>
+    <select id="getBydepNo" resultMap="Sta">
+        SELECT * FROM STAFF WHERE STA_DEPID=#{depNo}
+    </select>
+    <select id="getByposNo" resultMap="Sta">
+        SELECT * FROM STAFF WHERE STA_POSID=#{posNo}
     </select>
     <resultMap id="Sta" type="com.shana.model.Staff">
         <id property="id" column="STA_ID"></id>

@@ -32,7 +32,8 @@
             <td>${i.depName}</td>
             <td>
                 <a href="updateposition?name=${i.name}">修改职位名称</a>
-                <a href="deleteposition?id=${i.id}">删除</a>
+                <input type="button" class="g1" value="删除">
+                <input type="hidden" value="${i.id}">
             </td>
             </c:forEach>
         </tr>
@@ -48,7 +49,23 @@
 </form>
 <div style="text-align: right"><a href="managerindex.jsp">返回上一级</a></div>
 </body>
-
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+    $(function () {
+        $(".g1").click(function () {
+            $.ajax({
+                type:"post",
+                url:"deleteposition",
+                data:{id:$(this).next().val()},
+                success:function (obj) {
+                    if(obj!=null||obj!=""){
+                        alert(obj)
+                    }
+                }
+            })
+        })
+    })
+</script>
 <style type="text/css">
     .t1
     {

@@ -42,7 +42,6 @@ public class StaffController {
     }
     @RequestMapping(value = "/addStaff")
     public void addStaff(int resumeid, int recinfoid,HttpServletResponse response,int recruitmentid,double salary)throws Exception{
-        System.out.println(salary);
         response.setContentType("text/text;charset=utf-8");
         response.setCharacterEncoding("UTF-8");
         Staff staff=new Staff();
@@ -71,12 +70,13 @@ public class StaffController {
             return "redirect:/managerindex.jsp";
         }
         if (null!=staff1){
-            session.setAttribute("staff",staff1);
-
-            return "forward:/staffLogin.jsp";
+            staff1.setPosName(positionService.getNameById(staff1.getPosId()));
+            System.out.println(staff1);
+           session.setAttribute("s",staff1);
+            return "redirect:/staffLogin.jsp";
         }else {
             request.setAttribute("msg","用户名或密码错误");
-            return "forward:/staffindex.jsp";
+            return "redirect:/staffindex.jsp";
 
         }
     }
@@ -141,5 +141,46 @@ public class StaffController {
             response.getWriter().print("null");
         }
     }
+    @RequestMapping(value = "/rewardgetstaff")
+    public void rewardgetstaff(int id,HttpServletResponse response)throws Exception{
+        Staff staff=staffService.getStaffById(id);
+        response.getWriter().print(staff.toString());
 
+
+    }
+    @RequestMapping(value = "/staffallstaff")
+    public String staffallstaff(HttpServletRequest request){
+        List<Staff>list=staffService.getAll();
+
+        request.setAttribute("staffall",list);
+        return "forward:/staffallstaff.jsp";
+
+    }
+    @RequestMapping(value = "/staffgetstaff2")
+    public String staffallstaff2(HttpServletRequest request,Staff staff)throws Exception{
+        List<Staff>list=staffService.getByDepAndPos(staff);
+        request.setAttribute("staffall",list);
+        return "forward:/staffallstaff.jsp";
+
+    }
+    @RequestMapping(value = "/staffgetstaff3")
+    public String staffallstaff3(HttpServletRequest request,Staff staff)throws Exception{
+        List<Staff>list=staffService.getByDepAndPos(staff);
+        request.setAttribute("staffall",list);
+        return "forward:/managersendtraining.jsp";
+
+    }
+    @RequestMapping(value = "/staffpersonalinfo")
+    public String staffpersonalinfo(HttpSession session)throws Exception{
+        Staff staff= (Staff) session.getAttribute("s");
+        Staff staff1=staffService.getStaffById(staff.getId());
+        session.setAttribute("s",staff1);
+        return "redirect:/staffpersonalinfo.jsp";
+    }
+    @RequestMapping(value = "/staffupdate")
+    public String staffupdate(Staff staff,HttpSession session)throws Exception{
+
+        staffService.updatestaff(staff);
+        return "redirect;/staffpersonalinfo";
+    }
 }

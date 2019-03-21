@@ -28,7 +28,7 @@
             <th></th>
         </tr>
             <tr align="center">
-                <td><input name="staffId" value="${reward.staffId}"></td>
+                <td><input name="staffId" value="${reward.staffId}" readonly></td>
                 <td><input name="money" value="${reward.money}"></td>
                 <td><input name="reason" value="${reward.reason}"></td>
                 <td><input name="date" value="${reward.date}" readonly></td>

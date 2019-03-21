@@ -17,7 +17,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="interviewAndStaff" id="c2">
+<form action="interviewAndStaff">
     <table width="100%" id="ListArea" border="0" class="t1" align="center" cellpadding="0"
            cellspacing="0">
         <tr align="center">
@@ -32,7 +32,8 @@
             <td>${i.starttime}</td>
             <td>
                 <a href="updatedepartment?name=${i.name}">修改部门名称</a>
-                <a href="deletedepartment?id=${i.id}">删除</a>
+                <input type="button" class="g1" value="删除">
+                <input type="hidden" value="${i.id}">
             </td>
             </c:forEach>
         </tr>
@@ -48,7 +49,23 @@
 </form>
 <div style="text-align: right"><a href="managerindex.jsp">返回上一级</a></div>
 </body>
-
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+    $(function () {
+        $(".g1").click(function () {
+            $.ajax({
+                type:"post",
+                url:"deletedepartment",
+                data:{id:$(this).next().val()},
+                success:function (obj) {
+                    if(obj!=null||obj!=""){
+                        alert(obj)
+                    }
+                }
+            })
+        })
+    })
+</script>
 <style type="text/css">
     .t1
     {

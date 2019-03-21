@@ -126,7 +126,13 @@
 
     </table>
     </c:if>
+
 </div>
+<br>
+<br>
+<br>
+<br>
+<div style="text-align: right"><a href="managerindex.jsp">返回上一级</a></div>
 </body>
 <script src="js/jquery-3.2.1.js"></script>
 <script>

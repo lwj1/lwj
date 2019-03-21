@@ -18,7 +18,7 @@
         </set>
     </update>
     <delete id="deleteDepartment">
-        DELETE FROM L_DEPARTMENT WHERE id=#{id}
+        DELETE FROM L_DEPARTMENT WHERE DEP_ID=#{id}
     </delete>
     <select id="findByName" resultMap="D">
         SELECT * FROM L_DEPARTMENT WHERE DEP_NAME=#{name}

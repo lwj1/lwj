@@ -17,4 +17,8 @@ public interface StaffService {
     List<Staff> getStaffByNameContain(String name);
     Staff getStaffById(int id);
    Boolean updateDepIdAndPosId(Staff staff);
+    List<Staff> getByDepAndPos(Staff staff);
+    boolean updatestaff(Staff staff);
+    List<Staff> getBydepNo(int depNo);
+    List<Staff> getByposNo(int posNo);
 }

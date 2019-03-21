@@ -45,6 +45,8 @@ public class VisiterController {
                 recInfo.get(i).setPosName(positionService.getNameById(recInfo.get(i).getPosId()));
             }
             session.setAttribute("recInfo",recInfo);
+            int i=4;
+            System.out.println("i="+(i>4?99.9:9));
             return "forward:/visitLogin.jsp";
         }else {
             request.setAttribute("msg","用户名或密码错误");

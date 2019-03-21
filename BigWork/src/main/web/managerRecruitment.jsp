@@ -181,6 +181,6 @@ ${recruitmentjudge}
         </table>
     </c:if>
 </form>
-
+<div style="text-align: right"><a href="managerindex.jsp">返回上一级</a></div>
 </body>
 </html>
